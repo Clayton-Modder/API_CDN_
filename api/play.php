@@ -8,7 +8,6 @@ if (!isset($canais[$canal])) {
 
 $urlIframe = $canais[$canal];
 ?>
-
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -33,7 +32,22 @@ html, body, iframe {
     border: none;
 }
 
-/* Botão Reportar (ESQUERDA) */
+/* Botão Travou */
+#btnTravou {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Botão Reportar (lado esquerdo) */
 #btnReportar {
     position: fixed;
     bottom: 18px;
@@ -124,6 +138,8 @@ html, body, iframe {
 
 <body>
 
+<button id="btnTravou">Travou? Clique aqui</button>
+
 <button id="btnReportar" title="Reportar problema">
     <i class="fa-solid fa-triangle-exclamation"></i>
 </button>
@@ -164,16 +180,19 @@ const btnEnviar = document.getElementById("enviarReport");
 const outrosTexto = document.getElementById("outrosTexto");
 const statusMsg = document.getElementById("statusMsg");
 
+/* Abrir / fechar report */
 btnReportar.onclick = () => {
     reportBox.style.display = reportBox.style.display === "block" ? "none" : "block";
 };
 
+/* Mostrar textarea apenas em Outros */
 document.querySelectorAll('input[name="motivo"]').forEach(el => {
     el.onchange = () => {
         outrosTexto.style.display = el.value === "Outros" ? "block" : "none";
     };
 });
 
+/* Enviar log */
 function enviarLog(motivo) {
     fetch("telegram_log.php", {
         method: "POST",
@@ -186,6 +205,7 @@ function enviarLog(motivo) {
     });
 }
 
+/* Enviar report */
 btnEnviar.onclick = () => {
     const motivo = document.querySelector('input[name="motivo"]:checked');
     if (!motivo) return;
@@ -201,6 +221,11 @@ btnEnviar.onclick = () => {
     setTimeout(() => statusMsg.style.display = "none", 3000);
 
     outrosTexto.value = "";
+};
+
+/* Travou? apenas recarrega iframe (SEM LOG) */
+document.getElementById("btnTravou").onclick = () => {
+    iframe.src = iframe.src;
 };
 </script>
 
