@@ -139,7 +139,7 @@ html, body, iframe {
 
 <body>
 
-<button id="btnTravou">Travou?</button>
+<button id="btnTravou">Travou? Clique aqui</button>
 
 <button id="btnReportar" title="Reportar problema">
     <i class="fa-solid fa-triangle-exclamation"></i>
@@ -229,3 +229,4 @@ document.getElementById("btnTravou").onclick = () => {
 
 </body>
 </html>
+
