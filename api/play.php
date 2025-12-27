@@ -135,7 +135,7 @@ html, body, iframe {
     <i class="fa-solid fa-flag"></i>
 </button>
 
-<!-- MODAL -->
+<!-- MODAL DENÚNCIA -->
 <div id="modalDenuncia">
     <div class="box">
         <strong>Deseja reportar este canal?</strong>
@@ -169,7 +169,7 @@ const iframe = document.getElementById("playerFrame");
 const modal = document.getElementById("modalDenuncia");
 const descricao = document.getElementById("descricao");
 
-/* Enviar log */
+/* Função de envio Telegram (somente denúncia) */
 function enviarLog(motivo) {
     fetch("telegram_log.php", {
         method: "POST",
@@ -182,13 +182,12 @@ function enviarLog(motivo) {
     });
 }
 
-/* Travou */
+/* BOTÃO TRAVOU → SOMENTE RECARREGA */
 document.getElementById("btnTravou").onclick = () => {
-    enviarLog("Usuário clicou em TRAVOU");
     iframe.src = iframe.src;
 };
 
-/* Abrir modal */
+/* Abrir modal denúncia */
 document.getElementById("btnDenuncia").onclick = () => {
     modal.style.display = "flex";
 };
