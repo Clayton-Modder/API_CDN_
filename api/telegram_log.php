@@ -11,13 +11,13 @@ $url   = $_POST['url'] ?? 'sem_url';
 $erro  = $_POST['erro'] ?? 'erro_nao_informado';
 $data  = date('d/m/Y H:i:s');
 
-$mensagem = "🚨 *LOG*\n\n".
+$mensagem = "🚨 *Reporte de Problema*\n\n".
             "📺 Canal: `$canal`\n".
             "🌐 URL: `$url`\n".
             "❌ Motivo: `$erro`\n".
             "🕒 Data: `$data`";
 
-$telegramUrl = "https://api.telegram.org/bot{$BOT_TOKEN}/sendMessage";
+$telegram = "https://api.telegram.org/bot{$BOT_TOKEN}/sendMessage";
 
 $post = [
     'chat_id' => $CHAT_ID,
@@ -25,7 +25,7 @@ $post = [
     'parse_mode' => 'Markdown'
 ];
 
-$ch = curl_init($telegramUrl);
+$ch = curl_init($telegram);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
