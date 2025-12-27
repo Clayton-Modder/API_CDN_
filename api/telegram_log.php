@@ -9,20 +9,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $canal = $_POST['canal'] ?? 'desconhecido';
 $url   = $_POST['url'] ?? 'sem_url';
 $erro  = $_POST['erro'] ?? 'erro_nao_informado';
-
-$ip    = $_SERVER['REMOTE_ADDR'];
-$agent = $_SERVER['HTTP_USER_AGENT'];
 $data  = date('d/m/Y H:i:s');
 
 $mensagem = "🚨 *Falha no Player*\n\n".
-            "📺 NOME POINT: `$canal`\n".
+            "📺 Canal: `$canal`\n".
             "🌐 URL: `$url`\n".
-            "❌ Erro: `$erro`\n".
-            "📍 IP: `$ip`\n".
-            "🖥 Navegador: `$agent`\n".
+            "❌ Motivo: `$erro`\n".
             "🕒 Data: `$data`";
 
-$urlTelegram = "https://api.telegram.org/bot{$BOT_TOKEN}/sendMessage";
+$telegramUrl = "https://api.telegram.org/bot{$BOT_TOKEN}/sendMessage";
 
 $post = [
     'chat_id' => $CHAT_ID,
@@ -30,7 +25,7 @@ $post = [
     'parse_mode' => 'Markdown'
 ];
 
-$ch = curl_init($urlTelegram);
+$ch = curl_init($telegramUrl);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
