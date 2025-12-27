@@ -20,7 +20,8 @@ $urlIframe = $canais[$canal];
 
 <title>Player</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 html, body, iframe {
@@ -30,113 +31,90 @@ html, body, iframe {
     height: 100%;
     background: #000;
     border: none;
-    font-family: 'Inter', sans-serif;
 }
 
-/* Botão travou */
+/* Botão Travou */
 #btnTravou {
     position: fixed;
-    top: 12px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
     padding: 6px 14px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
-    background: #111;
+    background: #000;
     color: #fff;
-    font-size: 13px;
     cursor: pointer;
 }
 
-/* Botão report (ícone) */
+/* Botão Reportar */
 #btnReportar {
     position: fixed;
-    bottom: 18px;
-    left: 18px;
+    bottom: 15px;
+    right: 15px;
     z-index: 9999;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    padding: 8px 14px;
+    border-radius: 14px;
     border: none;
     background: #c00;
     color: #fff;
-    font-size: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
 }
 
-/* Caixa de reporte */
+#btnReportar i {
+    font-size: 16px;
+}
+
+/* Caixa Report */
 #reportBox {
     display: none;
     position: fixed;
-    bottom: 75px;
-    left: 18px;
-    width: 280px;
+    bottom: 70px;
+    right: 15px;
+    width: 260px;
     background: #111;
     color: #fff;
-    padding: 16px;
-    border-radius: 16px;
+    padding: 12px;
+    border-radius: 12px;
     z-index: 10000;
-    box-shadow: 0 0 20px rgba(0,0,0,.6);
 }
 
-#reportBox h3 {
-    margin: 0 0 10px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-#reportBox p {
-    margin: 0 0 12px;
-    font-size: 13px;
-    color: #bbb;
-}
-
-/* Motivos */
-.report-option {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 0;
-    font-size: 14px;
+#reportBox label {
+    display: block;
+    margin: 6px 0;
     cursor: pointer;
 }
 
-.report-option input {
-    accent-color: #c00;
-}
-
-/* Outros */
-#outrosTexto {
+#reportBox textarea {
     width: 100%;
-    height: 70px;
-    margin-top: 8px;
+    height: 60px;
     display: none;
-    background: #1c1c1c;
+    margin-top: 6px;
+    background: #222;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 6px;
     border: none;
-    padding: 8px;
-    font-size: 13px;
+    padding: 5px;
 }
 
-/* Enviar */
 #enviarReport {
-    margin-top: 10px;
+    margin-top: 8px;
     width: 100%;
-    padding: 8px;
-    border-radius: 10px;
     border: none;
+    padding: 6px;
+    border-radius: 8px;
     background: #0a0;
     color: #fff;
-    font-size: 14px;
-    font-weight: 600;
     cursor: pointer;
 }
 
-/* Status */
 #statusMsg {
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 12px;
     color: #0f0;
     display: none;
@@ -148,36 +126,24 @@ html, body, iframe {
 <body>
 
 <button id="btnTravou">Travou?</button>
-<button id="btnReportar" title="Reportar problema">⚠️</button>
+
+<button id="btnReportar">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    Reportar
+</button>
 
 <div id="reportBox">
-    <h3>Reportar problema</h3>
-    <p>Selecione o motivo abaixo:</p>
+    <strong>Selecione o problema</strong>
 
-    <label class="report-option">
-        <input type="radio" name="motivo" value="Canal não está funcionando">
-        Canal não está funcionando
-    </label>
-
-    <label class="report-option">
-        <input type="radio" name="motivo" value="Este canal não existe">
-        Este canal não existe
-    </label>
-
-    <label class="report-option">
-        <input type="radio" name="motivo" value="Está travando">
-        Está travando
-    </label>
-
-    <label class="report-option">
-        <input type="radio" name="motivo" value="Outros">
-        Outros
-    </label>
+    <label><input type="radio" name="motivo" value="Canal não está funcionando"> Canal não está funcionando</label>
+    <label><input type="radio" name="motivo" value="Este canal não existe"> Este canal não existe</label>
+    <label><input type="radio" name="motivo" value="Está travando"> Está travando</label>
+    <label><input type="radio" name="motivo" value="Outros"> Outros</label>
 
     <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
 
-    <button id="enviarReport">Enviar reporte</button>
-    <div id="statusMsg">Reporte enviado com sucesso ✓</div>
+    <button id="enviarReport">Enviar</button>
+    <div id="statusMsg">Enviado com sucesso ✓</div>
 </div>
 
 <iframe id="playerFrame"
@@ -191,8 +157,8 @@ html, body, iframe {
 const canal = "<?php echo $canal; ?>";
 const iframe = document.getElementById("playerFrame");
 
-const btnReportar = document.getElementById("btnReportar");
 const reportBox = document.getElementById("reportBox");
+const btnReportar = document.getElementById("btnReportar");
 const btnEnviar = document.getElementById("enviarReport");
 const outrosTexto = document.getElementById("outrosTexto");
 const statusMsg = document.getElementById("statusMsg");
@@ -236,7 +202,7 @@ btnEnviar.onclick = () => {
     outrosTexto.value = "";
 };
 
-// Travou
+// botão travou
 document.getElementById("btnTravou").onclick = () => {
     enviarLog("Usuário clicou em TRAVOU");
     iframe.src = iframe.src;
