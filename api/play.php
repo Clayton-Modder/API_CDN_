@@ -48,19 +48,20 @@ html, body, iframe {
     cursor: pointer;
 }
 
-/* Botão Reportar */
+/* Botão Reportar (ESQUERDA) */
 #btnReportar {
     position: fixed;
     bottom: 18px;
-    right: 18px;
+    left: 18px;
     z-index: 9999;
-    padding: 12px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     border: none;
     background: #8b0000;
     color: #fff;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
@@ -73,7 +74,7 @@ html, body, iframe {
     display: none;
     position: fixed;
     bottom: 80px;
-    right: 18px;
+    left: 18px;
     width: 270px;
     background: #111;
     color: #fff;
