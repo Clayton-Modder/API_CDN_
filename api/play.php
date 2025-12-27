@@ -43,7 +43,7 @@ html, body, iframe {
     padding: 6px 14px;
     border-radius: 10px;
     border: none;
-    background: #000;
+    background: #111;
     color: #fff;
     cursor: pointer;
 }
@@ -51,37 +51,42 @@ html, body, iframe {
 /* Botão Reportar */
 #btnReportar {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 18px;
+    right: 18px;
     z-index: 9999;
-    padding: 8px 14px;
-    border-radius: 14px;
+    padding: 12px;
+    border-radius: 50%;
     border: none;
-    background: #c00;
+    background: #8b0000;
     color: #fff;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
-#btnReportar i {
-    font-size: 16px;
+#btnReportar:hover {
+    background: #a00000;
 }
 
 /* Caixa Report */
 #reportBox {
     display: none;
     position: fixed;
-    bottom: 70px;
-    right: 15px;
-    width: 260px;
+    bottom: 80px;
+    right: 18px;
+    width: 270px;
     background: #111;
     color: #fff;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 14px;
+    border-radius: 14px;
     z-index: 10000;
+    font-size: 14px;
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+}
+
+#reportBox strong {
+    display: block;
+    margin-bottom: 8px;
 }
 
 #reportBox label {
@@ -95,28 +100,36 @@ html, body, iframe {
     height: 60px;
     display: none;
     margin-top: 6px;
-    background: #222;
+    background: #1c1c1c;
     color: #fff;
     border-radius: 6px;
     border: none;
-    padding: 5px;
+    padding: 6px;
+    resize: none;
 }
 
+/* Botão Enviar */
 #enviarReport {
-    margin-top: 8px;
+    margin-top: 10px;
     width: 100%;
     border: none;
-    padding: 6px;
-    border-radius: 8px;
-    background: #0a0;
+    padding: 8px;
+    border-radius: 10px;
+    background: #5c0000;
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
 }
 
+#enviarReport:hover {
+    background: #7a0000;
+}
+
+/* Status */
 #statusMsg {
-    margin-top: 6px;
+    margin-top: 8px;
     font-size: 12px;
-    color: #0f0;
+    color: #00ff88;
     display: none;
     text-align: center;
 }
@@ -127,13 +140,12 @@ html, body, iframe {
 
 <button id="btnTravou">Travou?</button>
 
-<button id="btnReportar">
+<button id="btnReportar" title="Reportar problema">
     <i class="fa-solid fa-triangle-exclamation"></i>
-    Reportar
 </button>
 
 <div id="reportBox">
-    <strong>Selecione o problema</strong>
+    <strong><i class="fa-solid fa-bug"></i> Reportar problema</strong>
 
     <label><input type="radio" name="motivo" value="Canal não está funcionando"> Canal não está funcionando</label>
     <label><input type="radio" name="motivo" value="Este canal não existe"> Este canal não existe</label>
@@ -142,8 +154,13 @@ html, body, iframe {
 
     <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
 
-    <button id="enviarReport">Enviar</button>
-    <div id="statusMsg">Enviado com sucesso ✓</div>
+    <button id="enviarReport">
+        <i class="fa-solid fa-paper-plane"></i> Enviar
+    </button>
+
+    <div id="statusMsg">
+        <i class="fa-solid fa-circle-check"></i> Enviado com sucesso
+    </div>
 </div>
 
 <iframe id="playerFrame"
