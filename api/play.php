@@ -21,6 +21,9 @@ $urlIframe = $canais[$canal];
 
 <title>Player</title>
 
+<!-- Ícone -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <style>
 html, body, iframe {
     margin: 0;
@@ -32,43 +35,104 @@ html, body, iframe {
     overflow: hidden;
 }
 
+/* Botão travou */
 #btnTravou {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    padding: 6px 14px;
+    padding: 5px 12px;
+    font-size: 13px;
     font-weight: bold;
-    font-size: 14px;
     border-radius: 10px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
 }
+
+/* Botão denúncia */
+#btnDenuncia {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #d10000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Modal */
+#modalDenuncia {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalDenuncia .box {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+}
+
+#modalDenuncia button {
+    margin: 10px 5px 0;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnSim {
+    background: #d10000;
+    color: #fff;
+}
+
+.btnNao {
+    background: #444;
+    color: #fff;
+}
 </style>
 
 <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
-
-<script>
-if (window.top === window.self) {
-    location.href = "https://google.com";
-}
-
-document.addEventListener('contextmenu', e => e.preventDefault());
-
-document.onkeydown = function(e) {
-    if (e.ctrlKey || e.keyCode === 123) {
-        return false;
-    }
-};
-</script>
 </head>
 
 <body>
 
-<button id="btnTravou">Travou? Clique aqui</button>
+<button id="btnTravou">Travou?</button>
+
+<!-- Botão Denúncia -->
+<button id="btnDenuncia" title="Denunciar canal">
+    <i class="fa-solid fa-flag"></i>
+</button>
+
+<!-- Modal Denúncia -->
+<div id="modalDenuncia">
+    <div class="box">
+        <p><strong>Deseja reportar este canal?</strong></p>
+        <button class="btnSim">Sim</button>
+        <button class="btnNao">Não</button>
+    </div>
+</div>
 
 <iframe id="playerFrame"
     src="<?php echo $urlIframe; ?>"
@@ -80,17 +144,12 @@ document.onkeydown = function(e) {
 <script>
 const canal = "<?php echo $canal; ?>";
 const iframe = document.getElementById("playerFrame");
-const botao = document.getElementById("btnTravou");
 
-let reloads = 0;
-
-// Enviar log
+// Enviar log Telegram
 function enviarLog(motivo) {
     fetch("telegram_log.php", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
             canal: canal,
             url: iframe.src,
@@ -99,24 +158,28 @@ function enviarLog(motivo) {
     });
 }
 
-// Erro de carregamento
-iframe.addEventListener("error", () => {
-    enviarLog("Erro ao carregar iframe");
-});
-
-// Loop excessivo
-iframe.onload = () => {
-    reloads++;
-    if (reloads > 5) {
-        enviarLog("Loop excessivo de carregamento");
-    }
-};
-
-// Botão travou
-botao.addEventListener("click", () => {
+/* BOTÃO TRAVOU */
+document.getElementById("btnTravou").onclick = () => {
     enviarLog("Usuário clicou em TRAVOU");
     iframe.src = iframe.src;
-});
+};
+
+/* DENÚNCIA */
+const btnDenuncia = document.getElementById("btnDenuncia");
+const modal = document.getElementById("modalDenuncia");
+
+btnDenuncia.onclick = () => {
+    modal.style.display = "flex";
+};
+
+modal.querySelector(".btnNao").onclick = () => {
+    modal.style.display = "none";
+};
+
+modal.querySelector(".btnSim").onclick = () => {
+    enviarLog("🚩 CANAL DENUNCIADO PELO USUÁRIO");
+    modal.style.display = "none";
+};
 </script>
 
 </body>
