@@ -33,21 +33,6 @@ html, body, iframe {
     border: none;
 }
 
-/* Botão Travou */
-#btnTravou {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-    padding: 6px 14px;
-    border-radius: 10px;
-    border: none;
-    background: #111;
-    color: #fff;
-    cursor: pointer;
-}
-
 /* Botão Reportar (ESQUERDA) */
 #btnReportar {
     position: fixed;
@@ -139,8 +124,6 @@ html, body, iframe {
 
 <body>
 
-<button id="btnTravou">Travou? Clique aqui</button>
-
 <button id="btnReportar" title="Reportar problema">
     <i class="fa-solid fa-triangle-exclamation"></i>
 </button>
@@ -219,14 +202,7 @@ btnEnviar.onclick = () => {
 
     outrosTexto.value = "";
 };
-
-// botão travou
-document.getElementById("btnTravou").onclick = () => {
-    enviarLog("Usuário clicou em TRAVOU");
-    iframe.src = iframe.src;
-};
 </script>
 
 </body>
 </html>
-
