@@ -28,10 +28,8 @@ html, body, iframe {
     height: 100%;
     background: #000;
     border: none;
-    overflow: hidden;
 }
 
-/* Botão Travou */
 #btnTravou {
     position: fixed;
     top: 10px;
@@ -39,7 +37,6 @@ html, body, iframe {
     transform: translateX(-50%);
     z-index: 9999;
     padding: 6px 14px;
-    font-weight: bold;
     border-radius: 10px;
     border: none;
     background: #000;
@@ -47,14 +44,12 @@ html, body, iframe {
     cursor: pointer;
 }
 
-/* Botão Reportar */
 #btnReportar {
     position: fixed;
     bottom: 15px;
     right: 15px;
     z-index: 9999;
     padding: 8px 14px;
-    font-weight: bold;
     border-radius: 12px;
     border: none;
     background: #c00;
@@ -62,7 +57,6 @@ html, body, iframe {
     cursor: pointer;
 }
 
-/* Caixa de Report */
 #reportBox {
     display: none;
     position: fixed;
@@ -74,7 +68,6 @@ html, body, iframe {
     padding: 12px;
     border-radius: 12px;
     z-index: 10000;
-    font-size: 14px;
 }
 
 #reportBox label {
@@ -86,16 +79,16 @@ html, body, iframe {
 #reportBox textarea {
     width: 100%;
     height: 60px;
-    margin-top: 5px;
     display: none;
+    margin-top: 6px;
     background: #222;
     color: #fff;
-    border: none;
     border-radius: 6px;
+    border: none;
     padding: 5px;
 }
 
-#reportBox button {
+#enviarReport {
     margin-top: 8px;
     width: 100%;
     border: none;
@@ -105,14 +98,15 @@ html, body, iframe {
     color: #fff;
     cursor: pointer;
 }
-</style>
 
-<script>
-if (window.top === window.self) {
-    location.href = "https://google.com";
+#statusMsg {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #0f0;
+    display: none;
+    text-align: center;
 }
-document.addEventListener('contextmenu', e => e.preventDefault());
-</script>
+</style>
 </head>
 
 <body>
@@ -121,17 +115,17 @@ document.addEventListener('contextmenu', e => e.preventDefault());
 <button id="btnReportar">Reportar</button>
 
 <div id="reportBox">
-    <strong>Qual o problema?</strong>
+    <strong>Selecione o problema</strong>
 
-    <label><input type="radio" name="motivo" value="Canal fora do ar"> Canal fora do ar</label>
-    <label><input type="radio" name="motivo" value="Sem áudio"> Sem áudio</label>
-    <label><input type="radio" name="motivo" value="Travando muito"> Travando muito</label>
-    <label><input type="radio" name="motivo" value="Tela preta"> Tela preta</label>
+    <label><input type="radio" name="motivo" value="Canal não está funcionando"> Canal não está funcionando</label>
+    <label><input type="radio" name="motivo" value="Este canal não existe"> Este canal não existe</label>
+    <label><input type="radio" name="motivo" value="Está travando"> Está travando</label>
     <label><input type="radio" name="motivo" value="Outros"> Outros</label>
 
     <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
 
     <button id="enviarReport">Enviar</button>
+    <div id="statusMsg">Enviado com sucesso ✓</div>
 </div>
 
 <iframe id="playerFrame"
@@ -144,19 +138,21 @@ document.addEventListener('contextmenu', e => e.preventDefault());
 <script>
 const canal = "<?php echo $canal; ?>";
 const iframe = document.getElementById("playerFrame");
+
 const reportBox = document.getElementById("reportBox");
 const btnReportar = document.getElementById("btnReportar");
 const btnEnviar = document.getElementById("enviarReport");
 const outrosTexto = document.getElementById("outrosTexto");
+const statusMsg = document.getElementById("statusMsg");
 
 btnReportar.onclick = () => {
     reportBox.style.display = reportBox.style.display === "block" ? "none" : "block";
 };
 
 document.querySelectorAll('input[name="motivo"]').forEach(el => {
-    el.addEventListener("change", () => {
+    el.onchange = () => {
         outrosTexto.style.display = el.value === "Outros" ? "block" : "none";
-    });
+    };
 });
 
 function enviarLog(motivo) {
@@ -172,21 +168,20 @@ function enviarLog(motivo) {
 }
 
 btnEnviar.onclick = () => {
-    let motivo = document.querySelector('input[name="motivo"]:checked');
-    if (!motivo) return alert("Selecione um motivo");
+    const motivo = document.querySelector('input[name="motivo"]:checked');
+    if (!motivo) return;
 
     let texto = motivo.value;
-    if (texto === "Outros") {
-        if (outrosTexto.value.trim() === "") {
-            return alert("Descreva o problema");
-        }
-        texto += " - " + outrosTexto.value;
+    if (texto === "Outros" && outrosTexto.value.trim() !== "") {
+        texto += " - " + outrosTexto.value.trim();
     }
 
     enviarLog(texto);
-    reportBox.style.display = "none";
+
+    statusMsg.style.display = "block";
+    setTimeout(() => statusMsg.style.display = "none", 3000);
+
     outrosTexto.value = "";
-    alert("Problema enviado com sucesso!");
 };
 
 // botão travou
