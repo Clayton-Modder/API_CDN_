@@ -29,22 +29,33 @@ html, body, iframe {
     height: 100%;
     background: #000;
     border: none;
-    overflow: hidden;
 }
 
-#btnTravou {
+#reportBox {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    padding: 6px 14px;
-    font-size: 14px;
-    font-weight: bold;
+    background: rgba(0,0,0,0.85);
+    padding: 8px;
     border-radius: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+#reportBox select,
+#reportBox button {
+    font-size: 13px;
+    border-radius: 6px;
     border: none;
-    background: #000;
+    padding: 6px;
+}
+
+#reportBox button {
+    background: #e50914;
     color: #fff;
+    font-weight: bold;
     cursor: pointer;
 }
 </style>
@@ -57,18 +68,25 @@ if (window.top === window.self) {
 }
 
 document.addEventListener('contextmenu', e => e.preventDefault());
-
-document.onkeydown = function(e) {
-    if (e.ctrlKey || e.keyCode === 123) {
-        return false;
-    }
-};
+document.onkeydown = e => (e.ctrlKey || e.keyCode === 123) ? false : true;
 </script>
 </head>
 
 <body>
 
-<button id="btnTravou">Travou? Clique aqui</button>
+<!-- BOX DE REPORT -->
+<div id="reportBox">
+    <select id="motivo">
+        <option value="">⚠️ Reportar problema</option>
+        <option value="Canal offline">Canal offline</option>
+        <option value="Tela preta">Tela preta</option>
+        <option value="Sem áudio">Sem áudio</option>
+        <option value="Travando muito">Travando muito</option>
+        <option value="Não carrega">Não carrega</option>
+        <option value="Outro problema">Outro problema</option>
+    </select>
+    <button id="btnReportar">Enviar</button>
+</div>
 
 <iframe id="playerFrame"
     src="<?php echo $urlIframe; ?>"
@@ -80,41 +98,27 @@ document.onkeydown = function(e) {
 <script>
 const canal = "<?php echo $canal; ?>";
 const iframe = document.getElementById("playerFrame");
-const botao = document.getElementById("btnTravou");
 
-let reloads = 0;
+document.getElementById("btnReportar").addEventListener("click", () => {
+    const motivo = document.getElementById("motivo").value;
 
-function enviarLog(motivo) {
+    if (!motivo) {
+        alert("Selecione um motivo");
+        return;
+    }
+
     fetch("telegram_log.php", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
             canal: canal,
             url: iframe.src,
             erro: motivo
         })
     });
-}
 
-// Erro ao carregar iframe
-iframe.addEventListener("error", () => {
-    enviarLog("Erro ao carregar iframe");
-});
-
-// Loop de carregamento
-iframe.onload = () => {
-    reloads++;
-    if (reloads > 5) {
-        enviarLog("Loop excessivo de carregamento");
-    }
-};
-
-// Botão travou
-botao.addEventListener("click", () => {
-    enviarLog("Usuário clicou em TRAVOU");
-    iframe.src = iframe.src;
+    iframe.src = iframe.src; // recarrega player
+    alert("Problema enviado. Obrigado!");
 });
 </script>
 
