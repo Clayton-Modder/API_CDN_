@@ -11,7 +11,7 @@ $url   = $_POST['url'] ?? 'sem_url';
 $erro  = $_POST['erro'] ?? 'erro_nao_informado';
 $data  = date('d/m/Y H:i:s');
 
-$mensagem = "🚨 *Falha no Player*\n\n".
+$mensagem = "🚨 *LOG*\n\n".
             "📺 Canal: `$canal`\n".
             "🌐 URL: `$url`\n".
             "❌ Motivo: `$erro`\n".
