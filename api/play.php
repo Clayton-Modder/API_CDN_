@@ -15,8 +15,7 @@ $urlIframe = $canais[$canal];
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
 
 <title>Player</title>
@@ -32,6 +31,7 @@ html, body, iframe {
     overflow: hidden;
 }
 
+/* Botão Travou */
 #btnTravou {
     position: fixed;
     top: 10px;
@@ -40,35 +40,99 @@ html, body, iframe {
     z-index: 9999;
     padding: 6px 14px;
     font-weight: bold;
-    font-size: 14px;
     border-radius: 10px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
 }
-</style>
 
-<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+/* Botão Reportar */
+#btnReportar {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    background: #c00;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Caixa de Report */
+#reportBox {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    width: 260px;
+    background: #111;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    z-index: 10000;
+    font-size: 14px;
+}
+
+#reportBox label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+#reportBox textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    display: none;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+#reportBox button {
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    background: #0a0;
+    color: #fff;
+    cursor: pointer;
+}
+</style>
 
 <script>
 if (window.top === window.self) {
     location.href = "https://google.com";
 }
-
 document.addEventListener('contextmenu', e => e.preventDefault());
-
-document.onkeydown = function(e) {
-    if (e.ctrlKey || e.keyCode === 123) {
-        return false;
-    }
-};
 </script>
 </head>
 
 <body>
 
-<button id="btnTravou">Travou? Clique aqui</button>
+<button id="btnTravou">Travou?</button>
+<button id="btnReportar">Reportar</button>
+
+<div id="reportBox">
+    <strong>Qual o problema?</strong>
+
+    <label><input type="radio" name="motivo" value="Canal fora do ar"> Canal fora do ar</label>
+    <label><input type="radio" name="motivo" value="Sem áudio"> Sem áudio</label>
+    <label><input type="radio" name="motivo" value="Travando muito"> Travando muito</label>
+    <label><input type="radio" name="motivo" value="Tela preta"> Tela preta</label>
+    <label><input type="radio" name="motivo" value="Outros"> Outros</label>
+
+    <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
+
+    <button id="enviarReport">Enviar</button>
+</div>
 
 <iframe id="playerFrame"
     src="<?php echo $urlIframe; ?>"
@@ -80,17 +144,25 @@ document.onkeydown = function(e) {
 <script>
 const canal = "<?php echo $canal; ?>";
 const iframe = document.getElementById("playerFrame");
-const botao = document.getElementById("btnTravou");
+const reportBox = document.getElementById("reportBox");
+const btnReportar = document.getElementById("btnReportar");
+const btnEnviar = document.getElementById("enviarReport");
+const outrosTexto = document.getElementById("outrosTexto");
 
-let reloads = 0;
+btnReportar.onclick = () => {
+    reportBox.style.display = reportBox.style.display === "block" ? "none" : "block";
+};
 
-// Enviar log
+document.querySelectorAll('input[name="motivo"]').forEach(el => {
+    el.addEventListener("change", () => {
+        outrosTexto.style.display = el.value === "Outros" ? "block" : "none";
+    });
+});
+
 function enviarLog(motivo) {
     fetch("telegram_log.php", {
         method: "POST",
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
             canal: canal,
             url: iframe.src,
@@ -99,24 +171,29 @@ function enviarLog(motivo) {
     });
 }
 
-// Erro de carregamento
-iframe.addEventListener("error", () => {
-    enviarLog("Erro ao carregar iframe");
-});
+btnEnviar.onclick = () => {
+    let motivo = document.querySelector('input[name="motivo"]:checked');
+    if (!motivo) return alert("Selecione um motivo");
 
-// Loop excessivo
-iframe.onload = () => {
-    reloads++;
-    if (reloads > 5) {
-        enviarLog("Loop excessivo de carregamento");
+    let texto = motivo.value;
+    if (texto === "Outros") {
+        if (outrosTexto.value.trim() === "") {
+            return alert("Descreva o problema");
+        }
+        texto += " - " + outrosTexto.value;
     }
+
+    enviarLog(texto);
+    reportBox.style.display = "none";
+    outrosTexto.value = "";
+    alert("Problema enviado com sucesso!");
 };
 
-// Botão travou
-botao.addEventListener("click", () => {
+// botão travou
+document.getElementById("btnTravou").onclick = () => {
     enviarLog("Usuário clicou em TRAVOU");
     iframe.src = iframe.src;
-});
+};
 </script>
 
 </body>
