@@ -1,5 +1,5 @@
 <?php
-$BOT_TOKEN = "7542514291:AAH9eZgl511x2slhR14G0sxoxRZ4Eo-Ho-M";
+$BOT_TOKEN = "7542514291:AAE9epk1TlkBWmG4jLmKluxV81EIJsAwGuU";
 $CHAT_ID  = "-3621587880";
 
 $canal = $_POST['canal'] ?? 'Desconhecido';
