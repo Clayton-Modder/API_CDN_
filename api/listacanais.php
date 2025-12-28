@@ -246,11 +246,11 @@ return array(
   "Sportv-pt-opc5" => "https://canaisnatv.me/ply.php?link=https://sportsonline.click/channels/pt/sporttv5.php",
   "Sportv-pt-opc6" => "https://canaisnatv.me/ply.php?link=https://sportsonline.click/channels/pt/sporttv6.php",
   
-   "ElevenSports-pt-opc1" => "https://sportsonline.click/channels/pt/eleven1.php",
-  "ElevenSports-pt-opc2" => "https://sportsonline.click/channels/pt/eleven2.php",
-  "ElevenSports-pt-opc3" => "https://sportsonline.click/channels/pt/eleven3.php",
-  "ElevenSports-pt-opc4" => "https://sportsonline.click/channels/pt/eleven2.php",
-  "ElevenSports-pt-opc5" => "https://sportsonline.click/channels/pt/eleven3.php",
+   "ElevenSports-pt-opc1" => "https://popcdn.day/player/ELEVEN1",
+  "ElevenSports-pt-opc2" => "https://popcdn.day/player/ELEVEN2",
+  "ElevenSports-pt-opc3" => "https://popcdn.day/player/ELEVEN3",
+  "ElevenSports-pt-opc4" => "https://popcdn.day/player/ELEVEN4",
+  "ElevenSports-pt-opc5" => "https://popcdn.day/player/ELEVEN5",
    
   "ufcfigthpass" => "https://redecanais.fm//player3/ch.php?canal=ufcfightpass",
  "ufcfigthpass-2" => "https://embedtv.org/ufcfightpass/",
