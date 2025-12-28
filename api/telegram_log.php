@@ -6,7 +6,7 @@ $canal = $_POST['canal'] ?? 'Desconhecido';
 $url   = $_POST['url'] ?? '';
 $erro  = $_POST['erro'] ?? '';
 
-$msg = "🚨 *LOG*\n\n"
+$msg = "🚨 *Relatório de Canal*\n\n"
      . "📺 Canal: `$canal`\n"
      . "❌ Problema: $erro\n"
      . "🔗 URL: $url";
