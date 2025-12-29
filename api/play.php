@@ -31,79 +31,135 @@ html, body, iframe {
     border: none;
 }
 
+/* Botão Travou */
 #btnTravou {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    padding: 6px 14px;
-    border-radius: 10px;
+    padding: 6px 16px;
+    border-radius: 14px;
     border: none;
     background: #111;
     color: #fff;
     cursor: pointer;
 }
 
+/* Botão Reportar */
 #btnReportar {
     position: fixed;
     bottom: 18px;
     left: 18px;
-    z-index: 9999;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     border: none;
-    background: #8b0000;
+    background: linear-gradient(135deg,#b00000,#ff3b3b);
     color: #fff;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    z-index: 9999;
+    box-shadow: 0 8px 20px rgba(0,0,0,.6);
 }
 
+/* Report Box */
 #reportBox {
     display: none;
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     left: 18px;
-    width: 270px;
-    background: #111;
+    width: 310px;
+    background: #0f0f0f;
+    border-radius: 18px;
+    padding: 16px;
     color: #fff;
-    padding: 14px;
-    border-radius: 14px;
     z-index: 10000;
+    box-shadow: 0 0 30px rgba(0,0,0,.9);
+    animation: fadeUp .2s ease;
 }
 
-#reportBox textarea {
-    width: 100%;
-    height: 60px;
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.report-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.motivo {
+    background: #1a1a1a;
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    transition: .2s;
+    border: 1px solid #222;
+}
+
+.motivo i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #ff5555;
+}
+
+.motivo:hover {
+    background: #222;
+}
+
+.motivo.active {
+    background: #5c0000;
+    border-color: #ff3b3b;
+}
+
+#outrosTexto {
     display: none;
-    margin-top: 6px;
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
     background: #1c1c1c;
-    color: #fff;
-    border-radius: 6px;
+    border-radius: 10px;
     border: none;
-    padding: 6px;
+    padding: 8px;
+    color: #fff;
     resize: none;
 }
 
 #enviarReport {
-    margin-top: 10px;
+    margin-top: 14px;
     width: 100%;
+    padding: 10px;
+    border-radius: 14px;
     border: none;
-    padding: 8px;
-    border-radius: 10px;
-    background: #5c0000;
+    background: linear-gradient(135deg,#ff3b3b,#b00000);
     color: #fff;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #statusMsg {
     margin-top: 8px;
+    text-align: center;
     font-size: 12px;
     display: none;
-    text-align: center;
+}
+
+/* Iframe */
+iframe {
+    height: 100vh;
 }
 </style>
 </head>
@@ -117,17 +173,38 @@ html, body, iframe {
 </button>
 
 <div id="reportBox">
-    <strong>Reportar problema</strong>
+    <div class="report-header">
+        <i class="fa-solid fa-bug"></i>
+        <span>Reportar problema</span>
+    </div>
 
-    <label><input type="radio" name="motivo" value="Canal não está funcionando"> Canal não está funcionando</label>
-    <label><input type="radio" name="motivo" value="Este canal não existe"> Este canal não existe</label>
-    <label><input type="radio" name="motivo" value="Está travando"> Está travando</label>
-    <label><input type="radio" name="motivo" value="Outros"> Outros</label>
+    <div class="report-grid">
+        <div class="motivo" data-value="Canal fora do ar">
+            <i class="fa-solid fa-circle-xmark"></i>
+            Canal fora do ar
+        </div>
+        <div class="motivo" data-value="Está travando">
+            <i class="fa-solid fa-spinner"></i>
+            Travando
+        </div>
+        <div class="motivo" data-value="Erro de áudio ou vídeo">
+            <i class="fa-solid fa-volume-xmark"></i>
+            Áudio / Vídeo
+        </div>
+        <div class="motivo" data-value="Canal inválido">
+            <i class="fa-solid fa-ban"></i>
+            Canal inválido
+        </div>
+        <div class="motivo" data-value="Outros">
+            <i class="fa-solid fa-ellipsis"></i>
+            Outros
+        </div>
+    </div>
 
     <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
 
     <button id="enviarReport">
-        <i class="fa-solid fa-paper-plane"></i> Enviar
+        <i class="fa-solid fa-paper-plane"></i> Enviar report
     </button>
 
     <div id="statusMsg"></div>
@@ -150,32 +227,38 @@ const btnEnviar = document.getElementById("enviarReport");
 const outrosTexto = document.getElementById("outrosTexto");
 const statusMsg = document.getElementById("statusMsg");
 
+let motivoSelecionado = "";
+
 /* Abrir / fechar report */
 btnReportar.onclick = () => {
-    reportBox.style.display = reportBox.style.display === "block" ? "none" : "block";
+    reportBox.style.display =
+        reportBox.style.display === "block" ? "none" : "block";
 };
 
-/* Mostrar textarea apenas em Outros */
-document.querySelectorAll('input[name="motivo"]').forEach(el => {
-    el.onchange = () => {
-        outrosTexto.style.display = el.value === "Outros" ? "block" : "none";
+/* Seleção de motivo */
+document.querySelectorAll(".motivo").forEach(el => {
+    el.onclick = () => {
+        document.querySelectorAll(".motivo").forEach(m => m.classList.remove("active"));
+        el.classList.add("active");
+
+        motivoSelecionado = el.dataset.value;
+        outrosTexto.style.display = motivoSelecionado === "Outros" ? "block" : "none";
     };
 });
 
 /* Enviar report */
 btnEnviar.onclick = () => {
-    const motivo = document.querySelector('input[name="motivo"]:checked');
-    if (!motivo) return;
+    if (!motivoSelecionado) return;
+
+    let texto = motivoSelecionado;
+    if (motivoSelecionado === "Outros" && outrosTexto.value.trim()) {
+        texto += " - " + outrosTexto.value.trim();
+    }
 
     btnEnviar.disabled = true;
     statusMsg.style.display = "block";
     statusMsg.style.color = "#ccc";
     statusMsg.textContent = "Enviando...";
-
-    let texto = motivo.value;
-    if (texto === "Outros" && outrosTexto.value.trim()) {
-        texto += " - " + outrosTexto.value.trim();
-    }
 
     fetch("telegram_log.php", {
         method: "POST",
@@ -190,8 +273,7 @@ btnEnviar.onclick = () => {
     .then(resp => {
         if (resp.trim() === "OK") {
             statusMsg.style.color = "#00ff88";
-            statusMsg.textContent = "Enviado com sucesso";
-            outrosTexto.value = "";
+            statusMsg.textContent = "Report enviado com sucesso";
         } else {
             throw new Error();
         }
@@ -202,11 +284,17 @@ btnEnviar.onclick = () => {
     })
     .finally(() => {
         btnEnviar.disabled = false;
-        setTimeout(() => statusMsg.style.display = "none", 3000);
+        setTimeout(() => {
+            statusMsg.style.display = "none";
+            reportBox.style.display = "none";
+            outrosTexto.value = "";
+            motivoSelecionado = "";
+            document.querySelectorAll(".motivo").forEach(m => m.classList.remove("active"));
+        }, 2500);
     });
 };
 
-/* Travou? apenas recarrega iframe (SEM LOG) */
+/* Travou? apenas recarrega iframe */
 document.getElementById("btnTravou").onclick = () => {
     iframe.src = iframe.src;
 };
