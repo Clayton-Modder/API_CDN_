@@ -1,8 +1,8 @@
 <?php
-$canal = $_GET['canal'] ?? null;
+$canal = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['canal'] ?? '');
 $canais = include('listacanais.php');
 
-if (!isset($canais[$canal])) {
+if (!$canal || !isset($canais[$canal])) {
     exit("Este canal não existe");
 }
 
@@ -19,7 +19,6 @@ $urlIframe = $canais[$canal];
 
 <title>Player</title>
 
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
@@ -32,7 +31,6 @@ html, body, iframe {
     border: none;
 }
 
-/* Botão Travou */
 #btnTravou {
     position: fixed;
     top: 10px;
@@ -47,7 +45,6 @@ html, body, iframe {
     cursor: pointer;
 }
 
-/* Botão Reportar (lado esquerdo) */
 #btnReportar {
     position: fixed;
     bottom: 18px;
@@ -64,11 +61,6 @@ html, body, iframe {
     box-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
-#btnReportar:hover {
-    background: #a00000;
-}
-
-/* Caixa Report */
 #reportBox {
     display: none;
     position: fixed;
@@ -80,19 +72,6 @@ html, body, iframe {
     padding: 14px;
     border-radius: 14px;
     z-index: 10000;
-    font-size: 14px;
-    box-shadow: 0 0 15px rgba(0,0,0,.8);
-}
-
-#reportBox strong {
-    display: block;
-    margin-bottom: 8px;
-}
-
-#reportBox label {
-    display: block;
-    margin: 6px 0;
-    cursor: pointer;
 }
 
 #reportBox textarea {
@@ -108,7 +87,6 @@ html, body, iframe {
     resize: none;
 }
 
-/* Botão Enviar */
 #enviarReport {
     margin-top: 10px;
     width: 100%;
@@ -121,15 +99,9 @@ html, body, iframe {
     font-weight: bold;
 }
 
-#enviarReport:hover {
-    background: #7a0000;
-}
-
-/* Status */
 #statusMsg {
     margin-top: 8px;
     font-size: 12px;
-    color: #00ff88;
     display: none;
     text-align: center;
 }
@@ -145,7 +117,7 @@ html, body, iframe {
 </button>
 
 <div id="reportBox">
-    <strong><i class="fa-solid fa-bug"></i> Reportar problema</strong>
+    <strong>Reportar problema</strong>
 
     <label><input type="radio" name="motivo" value="Canal não está funcionando"> Canal não está funcionando</label>
     <label><input type="radio" name="motivo" value="Este canal não existe"> Este canal não existe</label>
@@ -158,20 +130,18 @@ html, body, iframe {
         <i class="fa-solid fa-paper-plane"></i> Enviar
     </button>
 
-    <div id="statusMsg">
-        <i class="fa-solid fa-circle-check"></i> Enviado com sucesso
-    </div>
+    <div id="statusMsg"></div>
 </div>
 
 <iframe id="playerFrame"
-    src="<?php echo $urlIframe; ?>"
+    src="<?= htmlspecialchars($urlIframe, ENT_QUOTES) ?>"
     allow="encrypted-media"
     allowfullscreen
     scrolling="no">
 </iframe>
 
 <script>
-const canal = "<?php echo $canal; ?>";
+const canal = <?= json_encode($canal) ?>;
 const iframe = document.getElementById("playerFrame");
 
 const reportBox = document.getElementById("reportBox");
@@ -192,35 +162,48 @@ document.querySelectorAll('input[name="motivo"]').forEach(el => {
     };
 });
 
-/* Enviar log */
-function enviarLog(motivo) {
+/* Enviar report */
+btnEnviar.onclick = () => {
+    const motivo = document.querySelector('input[name="motivo"]:checked');
+    if (!motivo) return;
+
+    btnEnviar.disabled = true;
+    statusMsg.style.display = "block";
+    statusMsg.style.color = "#ccc";
+    statusMsg.textContent = "Enviando...";
+
+    let texto = motivo.value;
+    if (texto === "Outros" && outrosTexto.value.trim()) {
+        texto += " - " + outrosTexto.value.trim();
+    }
+
     fetch("telegram_log.php", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
             canal: canal,
             url: iframe.src,
-            erro: motivo
+            erro: texto
         })
+    })
+    .then(r => r.text())
+    .then(resp => {
+        if (resp.trim() === "OK") {
+            statusMsg.style.color = "#00ff88";
+            statusMsg.textContent = "Enviado com sucesso";
+            outrosTexto.value = "";
+        } else {
+            throw new Error();
+        }
+    })
+    .catch(() => {
+        statusMsg.style.color = "#ff5555";
+        statusMsg.textContent = "Erro ao enviar";
+    })
+    .finally(() => {
+        btnEnviar.disabled = false;
+        setTimeout(() => statusMsg.style.display = "none", 3000);
     });
-}
-
-/* Enviar report */
-btnEnviar.onclick = () => {
-    const motivo = document.querySelector('input[name="motivo"]:checked');
-    if (!motivo) return;
-
-    let texto = motivo.value;
-    if (texto === "Outros" && outrosTexto.value.trim() !== "") {
-        texto += " - " + outrosTexto.value.trim();
-    }
-
-    enviarLog(texto);
-
-    statusMsg.style.display = "block";
-    setTimeout(() => statusMsg.style.display = "none", 3000);
-
-    outrosTexto.value = "";
 };
 
 /* Travou? apenas recarrega iframe (SEM LOG) */
