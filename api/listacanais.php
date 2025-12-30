@@ -90,14 +90,14 @@ return array(
     "cnnbrasil-5" => "https://rdcanais.top/cnnbrasil",
   
   "Band" => "https://redecanais.fm//player3/ch.php?canal=band",  
-  "Band-2" => "https://embedtvonline.com/bandsp/",
-  "Band-3" => "https://geo.dailymotion.com/player/x9fev.html?video=k8fxV7sAEZpAxHxaX2y&customConfig[customParams]=8804%252Fparceiros%252Fband%252Fao_vivo&customConfig[mute]=false",
+  "Band-2" => "https://nossoplayeronlinehd.online/tv/bandsports",
+  "Band-3" => "https://maxsaid03.embedtv.best/Band",
   "Band-4" => "https://maxsaid03.embedtv.best/Band",
   "Band-5" => "https://playertv.net/e/?v=band",
   "Band-6" => "https://rdcanais.top/embed/?id=band",
-  "Band-7" => "https://geo.dailymotion.com/player/x9fev.html?video=k3dm9JsdYLK1HJBsuWA&customConfig[customParams]=8804%252Fparceiros%252Fband%252Fnoticias&customConfig[mute]=false",
-  "Band-8" => "https://geo.dailymotion.com/player/x9fev.html?video=k32fwnvblAySMhBsuUM&customConfig[customParams]=8804%252Fparceiros%252Fband%252Fnoticias&customConfig[mute]=false",
-  "Band-9" => "https://geo.dailymotion.com/player/x9fev.html?video=k32fwnvblAySMhBsuUM&customConfig[customParams]=8804%252Fparceiros%252Fband%252Fnoticias&customConfig[mute]=false",
+  "Band-7" => "https://maxsaid03.embedtv.best/Band",
+  "Band-8" => "https://maxsaid03.embedtv.best/Band",
+  "Band-9" => "https://maxsaid03.embedtv.best/Band",
 
 
 
