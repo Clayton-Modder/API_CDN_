@@ -640,7 +640,7 @@ return array(
  "ostrespatetas" => "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1eed3c29b39600073e2ec0/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=108&deviceId=5f1eed3c29b39600073e2ec0&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=-23.5475&deviceLon=-46.6361&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=BR&serverSideAds=false",
  
 "history-1" => "https://redecanais.fm//player3/ch.php?canal=history",
-"history-2" => "https://www.embedtv.net/embed/history",
+"history-2" => "https://maxsaid03.embedtv.best/history_hd",
 "history-3" => "https://maxsaid03.embedtv.best/history_hd",
 "history-4" => "https://maxsaid03.embedtv.best/history",
 "history-5" => "https://rdcanais.top/history",
@@ -648,25 +648,25 @@ return array(
 
 
 "discoveryTurbo-1" => "https://redecanais.fm//player3/ch.php?canal=discoveryturbo",
-"discoveryTurbo-2" => "https://www.embedtv.net/embed/discovery-turbo",
+"discoveryTurbo-2" => "https://maxsaid03.embedtv.best/discovery_turbo_hd",
  "discoveryTurbo-3" => "https://maxsaid03.embedtv.best/discovery_turbo_hd",
  "discoveryTurbo-4" => "https://maxsaid03.embedtv.best/discovery_turbo_hd",
  "discoveryTurbo-5" => "https://rdcanais.top/discoveryturbo",
  
 "discoveryChannel-1" => "https://redecanais.fm//player3/ch.php?canal=discovery",
-"discoveryChannel-2" => "https://www.embedtv.net/embed/discovery-channel",
+"discoveryChannel-2" => "https://maxsaid03.embedtv.best/discovery_channel_hd",
  "discoveryChannel-3" => "https://maxsaid03.embedtv.best/discovery_channel_hd",
   "discoveryChannel-4" => "https://embedflix.gold/tv/discovery-channel-hd",
  "discoveryChannel-5" => "https://rdcanais.top/discoverychannel",
 
  "discoveryhomehealh" => "https://redecanais.fm//player3/ch.php?canal=discoveryhomeihealth",
- "discoveryhomehealh-2" => "https://www.embedtv.net/embed/discovery-home-health",
+ "discoveryhomehealh-2" => "https://maxsaid03.embedtv.best/discoveryhh",
  "discoveryhomehealh-3" => "https://maxsaid03.embedtv.best/discoveryhh",
   "discoveryhomehealh-4" => "https://embedtv.org/discoveryhh/",
   "discoveryhomehealh-5" => "https://rdcanais.top/discoveryheh",
   
  "discoveryWold" => "https://redecanais.fm//player3/ch.php?canal=discoveryworld",
- "discoveryWold-2" => "https://www.embedtv.net/embed/discovery-world",
+ "discoveryWold-2" => "https://maxsaid03.embedtv.best/discoveryword",
  "discoveryWold-3" => "https://embedflix.gold/tv/discovery-world",
  "discoveryWold-4" => "https://maxsaid03.embedtv.best/discoveryword",
  "discoveryWold-5" => "https://rdcanais.top/discoveryworld",
@@ -674,26 +674,26 @@ return array(
 
 
 "hgtv-1" => "https://redecanais.fm//player3/ch.php?canal=hgtv",
-"hgtv-2" => "https://www.embedtv.net/embed/hgtv",
+"hgtv-2" => "https://maxsaid03.embedtv.best/hgtv_hd",
 "hgtv-3" => "https://maxsaid03.embedtv.best/hgtv_hd",
 "hgtv-4" => "https://rdcanais.top/hgtv",
 
 
 
  "AnimalPlanet-1" => "https://redecanais.fm//player3/ch.php?canal=animalplanet",
-"AnimalPlanet-2" => "https://www.embedtv.net/embed/animal-planet",
+"AnimalPlanet-2" => "https://maxsaid03.embedtv.best/animalplanet",
 "AnimalPlanet-3" => "https://maxsaid03.embedtv.best/animalplanet",
 "AnimalPlanet-4" => "https://maxsaid03.embedtv.best/animalplanet",
 "AnimalPlanet-5" => "https://rdcanais.top/animalplanet",
  
 "DiscoveryScience-1" => "https://redecanais.fm//player3/ch.php?canal=discoverysience",
-"DiscoveryScience-2" => "https://www.embedtv.net/embed/discovery-science",
+"DiscoveryScience-2" => "https://maxsaid03.embedtv.best/discoveryscience",
  "DiscoveryScience-3" => "https://maxsaid03.embedtv.best/discoveryscience",
   "DiscoveryScience-4" => "https://embedtv.org/discoveryscience/",
 "DiscoveryScience-5" => "https://rdcanais.top/discoveryscience",
 
 "discoverytheater-1" => "https://redecanais.fm//player3/ch.php?canal=discoverytheater",
-"discoverytheater-2" => "https://www.embedtv.net/embed/discovery-theater",
+"discoverytheater-2" => "https://maxsaid03.embedtv.best/discoverytheather",
 "discoverytheater-3" => "https://maxsaid03.embedtv.best/discoverytheather",
 "discoverytheater-4" => "https://maxsaid03.embedtv.best/discoverytheather",
 "discoverytheater-5" => "https://rdcanais.top/discoverytheater",
@@ -716,7 +716,7 @@ return array(
 
 
  "history2-1" => "https://redecanais.fm//player3/ch.php?canal=history2",
-"history2-2" => "https://www.embedtv.net/embed/history-2",
+"history2-2" => "https://maxsaid03.embedtv.best/history_2_hd",
 "history2-3" => "https://maxsaid03.embedtv.best/history_2_hd",
 "history2-4" => "https://embedflix.gold/tv/h2",
 "history2-4" => "https://rdcanais.top/history2",
@@ -739,12 +739,12 @@ return array(
   "Cartoonito-4" => "https://rdcanais.top/embed/?id=cartoonito",
  
   "tntseries" => "https://redecanais.fm//player3/ch.php?canal=tntseries",
-  "tntseries-2" => "https://www.embed-2.icu/embed/tnt-series",
+  "tntseries-2" => "https://nossoplayeronlinehd.online/tv/tntseries",
   "tntseries-3" => "https://maxsaid03.embedtv.best/tnt_series_hd", 
    "tntseries-4" => "https://rdcanais.top/tntseries", 
 
    "sony" => "https://redecanais.fm//player3/ch.php?canal=sony",
-  "sony-2" => "https://www.embedtv.net/embed/sony-channel",
+  "sony-2" => "https://www1.embedtv.best/sonychannel",
   "sony-3" => "https://embedflix.gold/tv/player.php?id=sony-channel",
 "sony-4" => "https://rdcanais.top/sonychannel",
 
