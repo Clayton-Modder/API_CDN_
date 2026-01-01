@@ -313,7 +313,7 @@ return array(
   "FoxSports-5" => "https://daddyhd.com/stream/stream-929.php",
   
     "Premiere5" => "https://redecanais.fm//player3/ch.php?canal=premiere5",
- "Premiere5-2" => "https://www.embedtv.net/embed/premiere-5",
+ "Premiere5-2" => "https://maxsaid03.embedtv.best/premiere5",
  "Premiere5-3" => "https://playertv.net/e/?v=premiere5",
  "Premiere5-4" => "https://embedflix.gold/tv/player.php?id=premiere-5",
  "Premiere5-5" => "https://nossoplayeronlinehd.online/tv/premiere5",
@@ -321,7 +321,7 @@ return array(
  
  
    "Premiere6" => "https://redecanais.fm//player3/ch.php?canal=premiere6",
- "Premiere6-2" => "https://www.embedtv.net/embed/premiere-6",
+ "Premiere6-2" => "https://maxsaid03.embedtv.best/premiere6",
  "Premiere6-3" => "https://playertv.net/e/?v=premiere6",
  "Premiere6-4" => "https://embedflix.gold/tv/player.php?id=premiere-6",
  "Premiere6-5" => "https://nossoplayeronlinehd.online/tv/premiere6",
@@ -336,7 +336,7 @@ return array(
  
  
  "Premiere8" => "https://redecanais.fm//player3/ch.php?canal=premiere8",
- "Premiere8-2" => "https://www.embedtv.net/embed/premiere-8",
+ "Premiere8-2" => "https://maxsaid03.embedtv.best/premiere8",
  "Premiere8-3" => "https://playertv.net/e/?v=premiere8",
  "Premiere8-4" => "https://embedflix.gold/tv/player.php?id=premiere-8",
  "Premiere8-5" => "https://nossoplayeronlinehd.online/tv/premiere8",
@@ -705,10 +705,10 @@ return array(
 "NationalGeographic-5" => "https://rdcanais.top/embed/?id=nationalgeographic",
  
 
-"vivat" => "https://redecanais.fm//player3/ch.php?canal=viva",
-"vivat-2" => "https://rdcanais.top/globoplaynovelas",
+"vivat" => "https://redecanais.fm//player3/ch.php?canal=globoplaynovelas",
+"vivat-2" => "https://maxsaid03.embedtv.best/viva",
 "vivat-3" => "https://maxsaid03.embedtv.best/viva",
-"vivat-4" => "https://playertv.net/e/?v=viva",
+"vivat-4" => "https://nossoplayeronlinehd.online/tv/viva",
 "vivat-5" => "https://nossoplayeronlinehd.online/tv/viva",
 "vivat-6" => "https://rdcanais.top/globoplaynovelas",
 
@@ -744,7 +744,7 @@ return array(
    "tntseries-4" => "https://rdcanais.top/tntseries", 
 
    "sony" => "https://redecanais.fm//player3/ch.php?canal=sony",
-  "sony-2" => "https://www1.embedtv.best/sonychannel",
+  "sony-2" => "https://maxsaid03.embedtv.best/sonychannel",
   "sony-3" => "https://embedflix.gold/tv/player.php?id=sony-channel",
 "sony-4" => "https://rdcanais.top/sonychannel",
 
@@ -1030,10 +1030,10 @@ return array(
             "Smithsonian" => "https://playertv.net/e/?v=smithsonian",
             
  "Multishow" => "https://redecanais.fm//player3/ch.php?canal=multishow",
- "Multishow-2" => "https://playertv.net/e/?v=multishow",
- "Multishow-3" => "https://embedflix.gold/tv/player.php?id=multishow",  
+ "Multishow-2" => "https://nossoplayeronlinehd.online/tv/multishow",
+ "Multishow-3" => "https://maxsaid03.embedtv.best/multishow",  
  "Multishow-4" => "https://maxsaid03.embedtv.best/multishow",  
- "Multishow-5" => "https://maxsaid03.embedtv.best/multishow",
+ "Multishow-5" => "https://maxsaid04.embedtv.best/multishow",
  "Multishow-6" => "https://rdcanais.top/multishow",
 
  
@@ -1141,7 +1141,7 @@ return array(
 
     
     "hbo" => "https://redecanais.fm//player3/ch.php?canal=hbo",
- "hbo-2" => "https://www1.embedtv.best/hbo",
+ "hbo-2" => "https://maxsaid03.embedtv.best/hbo",
  "hbo-3" => "https://nossoplayeronlinehd.online/tv/hbo",
  "hbo-4" => "https://embedflix.gold/tv/player.php?id=hbo",
  "hbo-5" => "https://rdcanais.top/hbo",
@@ -1159,7 +1159,7 @@ return array(
   "hbo2-5" => "https://rdcanais.top/hbo2",
  
  "hbomundi" => "https://redecanais.fm//player3/ch.php?canal=hbomundi",
- "hbomundi-2" => "https://www1.embedtv.best/hbomundi",
+ "hbomundi-2" => "https://maxsaid03.embedtv.best/hbomundi",
  "hbomundi-3" => "https://maxsaid03.embedtv.best/hbomundi",
  "hbomundi-4" => "https://maxsaid03.embedtv.best/hbomundi",
  
@@ -1242,7 +1242,7 @@ return array(
 
 
 "Space" => "https://redecanais.fm//player3/ch.php?canal=space",
-"Space-2" => "https://www1.embedtv.best/space",
+"Space-2" => "https://maxsaid03.embedtv.best/space",
 "Space-3" => "https://nossoplayeronlinehd.online/tv/space",
 "Space-4" => "https://rdcanais.top/space",
 
@@ -1255,7 +1255,7 @@ return array(
 "amc-4" => "https://rdcanais.top/amc",
 
 "WarnerTV" => "https://redecanais.fm//player3/ch.php?canal=warner",
-"WarnerTV-2" => "https://www1.embedtv.best/warnerchannel",
+"WarnerTV-2" => "https://maxsaid03.embedtv.best/warnerchannel",
 "WarnerTV-3" => "https://maxsaid03.embedtv.best/warner_hd",
 "WarnerTV-4" => "https://rdcanais.top/warnertv",
 
@@ -1264,7 +1264,7 @@ return array(
 "ParamountChannel-3" => "https://rdcanais.top/embed/?id=paramountnetwork",
 
 "StudioUniversal" => "https://redecanais.fm//player3/ch.php?canal=studiouniversal",
-"StudioUniversal-2" => "https://www1.embedtv.best/studiouniversal",
+"StudioUniversal-2" => "https://maxsaid03.embedtv.best/studiouniversal",
 "StudioUniversal-3" => "https://playertv.net/e/?v=studio",
 "StudioUniversal-4" => "https://rdcanais.top/studiouniversal",
  
@@ -1275,7 +1275,7 @@ return array(
 
  
  "hbopop" => "https://redecanais.fm//player3/ch.php?canal=hbopop",
- "hbopop-2" => "https://www1.embedtv.best/hbopop",
+ "hbopop-2" => "https://maxsaid03.embedtv.best/hbopop",
  "hbopop-3" => "https://maxsaid03.embedtv.best/hbopop",
 "hbopop-4" => "https://www.embedtv.net/embed/hbo-pop",
 "hbopop-5" => "https://embedtv.org/hbopop/",
@@ -1306,7 +1306,7 @@ return array(
     
       "gnt" => "https://redecanais.fm//player3/ch.php?canal=gnt",
   "gnt-2" => "https://maxsaid03.embedtv.best/gnt", 
-   "gnt-3" => "https://playertv.net/e/?v=gnt",
+   "gnt-3" => "https://embedtv.org/gnt/",
    "gnt-4" => "https://rdcanais.top/gnt",
 
   "tlc" => "https://redecanais.fm//player3/ch.php?canal=tlc",
