@@ -1371,10 +1371,10 @@ return array(
       "tvcultura-4" => "https://rdcanais.top/embed/?id=tvcultura",
       
           "universal" => "https://redecanais.fm/player3/ch.php?canal=universal",
-  "universal-2" => "https://maxsaid03.embedtv.best/universal_hd",
-    "universal-3" => "https://maxsaid03.embedtv.best/universal_hd",
-        "universal-4" => "https://playertv.net/e/?v=universal",
-                "universal-5" => "https://rdcanais.top/embed/?id=universaltv",
+  "universal-2" => "https://embedtv.org/universaltv/",
+    "universal-3" => "https://embedtv.org/universaltv/",
+        "universal-4" => "https://embedtv.org/universaltv/",
+                "universal-5" => "https://embedtv.org/universaltv/",
     
     "Cinecanal" => "https://redecanais.fm/player3/ch.php?canal=cinecanal",
   "Cinecanal-2" => "https://playertv.net/e/?v=cineCanal",
