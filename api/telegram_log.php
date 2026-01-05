@@ -7,18 +7,20 @@ $canal = $_POST['canal'] ?? 'N/A';
 $url   = $_POST['url'] ?? 'N/A';
 $erro  = $_POST['erro'] ?? 'N/A';
 
-$caption  = "🚨 *Relatório de Canal*\n\n";
-$caption .= "📺 Canal: `$canal`\n";
-$caption .= "❌ Problema: $erro\n";
-$caption .= "🔗 URL: $url";
+$caption  = "🚨 Relatório de Canal\n\n";
+$caption .= "Canal: $canal\n";
+$caption .= "Problema: $erro\n";
+$caption .= "URL: $url";
 
-if (!empty($_FILES['anexo']['tmp_name'])) {
+/* SE TEM ANEXO */
+if (isset($_FILES['anexo']) && $_FILES['anexo']['error'] === UPLOAD_ERR_OK) {
 
-    $fileTmp  = $_FILES['anexo']['tmp_name'];
-    $fileName = $_FILES['anexo']['name'];
-    $mime     = mime_content_type($fileTmp);
+    $tmp  = $_FILES['anexo']['tmp_name'];
+    $name = $_FILES['anexo']['name'];
+    $type = $_FILES['anexo']['type']; // MAIS CONFIÁVEL
 
-    if (strpos($mime, 'image/') === 0) {
+    // Decide endpoint
+    if (strpos($type, 'image/') === 0) {
         $endpoint = "sendPhoto";
         $field = "photo";
     } else {
@@ -26,31 +28,40 @@ if (!empty($_FILES['anexo']['tmp_name'])) {
         $field = "document";
     }
 
-    $urlApi = "https://api.telegram.org/bot$token/$endpoint";
+    $ch = curl_init("https://api.telegram.org/bot$token/$endpoint");
 
-    $post = [
-        'chat_id' => $chatId,
-        'caption' => $caption,
-        'parse_mode' => 'Markdown',
-        $field => new CURLFile($fileTmp, $mime, $fileName)
-    ];
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => [
+            'chat_id' => $chatId,
+            'caption' => $caption,
+            $field => new CURLFile($tmp, $type, $name)
+        ]
+    ]);
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $urlApi);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_exec($ch);
+    $response = curl_exec($ch);
+    $error = curl_error($ch);
     curl_close($ch);
 
-} else {
+    if ($response === false) {
+        echo "ERRO_CURL: $error";
+        exit;
+    }
 
-    file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
-        'chat_id' => $chatId,
-        'text' => $caption,
-        'parse_mode' => 'Markdown',
-        'disable_web_page_preview' => true
-    ]));
+} else {
+    // SEM ANEXO
+    $ch = curl_init("https://api.telegram.org/bot$token/sendMessage");
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => [
+            'chat_id' => $chatId,
+            'text' => $caption
+        ]
+    ]);
+    curl_exec($ch);
+    curl_close($ch);
 }
 
 echo "OK";
