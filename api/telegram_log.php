@@ -7,27 +7,50 @@ $canal = $_POST['canal'] ?? 'N/A';
 $url   = $_POST['url'] ?? 'N/A';
 $erro  = $_POST['erro'] ?? 'N/A';
 
-$msg  = "🚨 Relatório de Canal\n\n";
-$msg .= "Canal: $canal\n";
-$msg .= "Problema: $erro\n";
-$msg .= "URL: $url";
+$caption  = "🚨 *Relatório de Canal*\n\n";
+$caption .= "📺 Canal: `$canal`\n";
+$caption .= "❌ Problema: $erro\n";
+$caption .= "🔗 URL: $url";
 
-$ch = curl_init("https://api.telegram.org/bot$token/sendMessage");
-curl_setopt_array($ch, [
-    CURLOPT_POST => true,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POSTFIELDS => [
+if (!empty($_FILES['anexo']['tmp_name'])) {
+
+    $fileTmp  = $_FILES['anexo']['tmp_name'];
+    $fileName = $_FILES['anexo']['name'];
+    $mime     = mime_content_type($fileTmp);
+
+    if (strpos($mime, 'image/') === 0) {
+        $endpoint = "sendPhoto";
+        $field = "photo";
+    } else {
+        $endpoint = "sendDocument";
+        $field = "document";
+    }
+
+    $urlApi = "https://api.telegram.org/bot$token/$endpoint";
+
+    $post = [
         'chat_id' => $chatId,
-        'text' => $msg
-    ]
-]);
+        'caption' => $caption,
+        'parse_mode' => 'Markdown',
+        $field => new CURLFile($fileTmp, $mime, $fileName)
+    ];
 
-$response = curl_exec($ch);
-$err = curl_error($ch);
-curl_close($ch);
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $urlApi);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_exec($ch);
+    curl_close($ch);
 
-if ($response === false) {
-    echo "ERRO CURL: $err";
 } else {
-    echo "OK";
+
+    file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
+        'chat_id' => $chatId,
+        'text' => $caption,
+        'parse_mode' => 'Markdown',
+        'disable_web_page_preview' => true
+    ]));
 }
+
+echo "OK";
