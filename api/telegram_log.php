@@ -3,73 +3,54 @@
 $BOT_TOKEN = "8553413416:AAETpmhLL933bqSv__RsVtp9j8RJI1D3WjI";
 $CHAT_ID  = "-5286992033"; // ID REAL DO GRUPO (com sinal -)
 
-// ================== HEADERS ==================
-header("Content-Type: text/plain; charset=utf-8");
+$canal = $_POST['canal'] ?? 'N/A';
+$url   = $_POST['url'] ?? 'N/A';
+$erro  = $_POST['erro'] ?? 'N/A';
 
-// ================== RECEBE DADOS ==================
-$canal = trim($_POST['canal'] ?? '');
-$url   = trim($_POST['url'] ?? '');
-$erro  = trim($_POST['erro'] ?? '');
+$caption  = "🚨 *Relatório de Canal*\n\n";
+$caption .= "📺 Canal: `$canal`\n";
+$caption .= "❌ Problema: $erro\n";
+$caption .= "🔗 URL: $url";
 
-// ================== VALIDAÇÃO ==================
-if ($erro === '') {
-    http_response_code(400);
-    exit("Erro não informado");
-}
+if (!empty($_FILES['anexo']['tmp_name'])) {
 
-// Limites para evitar spam / erro Telegram
-$canal = substr($canal, 0, 60);
-$erro  = substr($erro, 0, 300);
-$url   = substr($url, 0, 400);
+    $fileTmp  = $_FILES['anexo']['tmp_name'];
+    $fileName = $_FILES['anexo']['name'];
+    $mime     = mime_content_type($fileTmp);
 
-// ================== ESCAPE MARKDOWN V2 ==================
-function escapeMarkdown($text) {
-    $chars = ['_', '*', '[', ']', '(', ')', '~', '`', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!'];
-    foreach ($chars as $c) {
-        $text = str_replace($c, '\\' . $c, $text);
+    if (strpos($mime, 'image/') === 0) {
+        $endpoint = "sendPhoto";
+        $field = "photo";
+    } else {
+        $endpoint = "sendDocument";
+        $field = "document";
     }
-    return $text;
-}
 
-$canal = escapeMarkdown($canal);
-$erro  = escapeMarkdown($erro);
-$url   = escapeMarkdown($url);
+    $urlApi = "https://api.telegram.org/bot$token/$endpoint";
 
-// ================== MENSAGEM ==================
-$msg =
-"🚨 *RELATÓRIO DE CANAL*\n\n" .
-"📺 *Canal:* `$canal`\n" .
-"❌ *Problema:* $erro\n" .
-"🔗 *URL:* $url\n\n" .
-"🕒 *Data:* " . date("d/m/Y H:i:s");
+    $post = [
+        'chat_id' => $chatId,
+        'caption' => $caption,
+        'parse_mode' => 'Markdown',
+        $field => new CURLFile($fileTmp, $mime, $fileName)
+    ];
 
-// ================== ENVIO VIA CURL ==================
-$apiUrl = "https://api.telegram.org/bot{$BOT_TOKEN}/sendMessage";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $urlApi);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_exec($ch);
+    curl_close($ch);
 
-$postData = [
-    'chat_id'    => $CHAT_ID,
-    'text'       => $msg,
-    'parse_mode' => 'MarkdownV2',
-    'disable_web_page_preview' => true
-];
+} else {
 
-$ch = curl_init($apiUrl);
-curl_setopt_array($ch, [
-    CURLOPT_POST           => true,
-    CURLOPT_POSTFIELDS     => http_build_query($postData),
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT        => 10,
-]);
-
-$response = curl_exec($ch);
-$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-// ================== RESPOSTA ==================
-if ($response === false || $httpCode !== 200) {
-    http_response_code(500);
-    echo "ERRO AO ENVIAR";
-    exit;
+    file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
+        'chat_id' => $chatId,
+        'text' => $caption,
+        'parse_mode' => 'Markdown',
+        'disable_web_page_preview' => true
+    ]));
 }
 
 echo "OK";
