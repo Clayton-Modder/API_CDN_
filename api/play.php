@@ -3,9 +3,8 @@ $canal = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['canal'] ?? '');
 $canais = include('listacanais.php');
 
 if (!$canal || !isset($canais[$canal])) {
-    exit("Este canal não existe");
+    exit("Canal não existe");
 }
-
 $urlIframe = $canais[$canal];
 ?>
 <!doctype html>
@@ -13,262 +12,157 @@ $urlIframe = $canais[$canal];
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="robots" content="noindex, nofollow">
-<meta name="referrer" content="no-referrer">
-
 <title>Player</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-html, body, iframe {
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
-    background:#000;
-    border:none;
-}
+html,body,iframe{margin:0;padding:0;width:100%;height:100%;background:#000}
+iframe{border:none}
 
-/* Botão Travou */
+/* Botões */
 #btnTravou{
-    position:fixed;
-    top:10px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:9999;
-    padding:6px 16px;
-    border-radius:14px;
-    border:none;
-    background:#111;
-    color:#fff;
-    cursor:pointer;
+    position:fixed;top:10px;left:50%;transform:translateX(-50%);
+    background:#111;color:#fff;border:none;padding:6px 16px;
+    border-radius:14px;z-index:9999;cursor:pointer
 }
-
-/* Botão Reportar */
 #btnReportar{
-    position:fixed;
-    bottom:18px;
-    left:18px;
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    border:none;
+    position:fixed;bottom:18px;left:18px;
+    width:52px;height:52px;border-radius:50%;
     background:linear-gradient(135deg,#b00000,#ff3b3b);
-    color:#fff;
-    font-size:22px;
-    cursor:pointer;
-    z-index:9999;
-    box-shadow:0 8px 20px rgba(0,0,0,.6);
+    color:#fff;border:none;font-size:22px;
+    z-index:9999;cursor:pointer
 }
 
-/* Caixa Report */
+/* Box */
 #reportBox{
-    display:none;
-    position:fixed;
-    bottom:90px;
-    left:18px;
-    width:320px;
-    background:#0f0f0f;
-    border-radius:18px;
-    padding:16px;
-    color:#fff;
-    z-index:10000;
-    box-shadow:0 0 30px rgba(0,0,0,.9);
+    display:none;position:fixed;bottom:90px;left:18px;
+    width:320px;background:#0f0f0f;color:#fff;
+    border-radius:18px;padding:14px;z-index:10000
 }
-
-.report-header{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:bold;
-    margin-bottom:14px;
-}
-
 .report-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
+    display:grid;grid-template-columns:1fr 1fr;gap:10px
 }
-
 .motivo{
-    background:#1a1a1a;
-    border-radius:14px;
-    padding:12px;
-    text-align:center;
-    cursor:pointer;
-    font-size:13px;
-    border:1px solid #222;
+    background:#1b1b1b;border-radius:12px;padding:10px;
+    text-align:center;font-size:13px;cursor:pointer
 }
-
-.motivo i{
-    display:block;
-    font-size:20px;
-    margin-bottom:6px;
-    color:#ff5555;
-}
-
-.motivo.active{
-    background:#5c0000;
-    border-color:#ff3b3b;
-}
+.motivo.active{background:#5c0000}
+.motivo i{display:block;font-size:18px;margin-bottom:4px;color:#ff5555}
 
 #outrosTexto{
-    display:none;
-    margin-top:10px;
-    width:100%;
-    height:70px;
-    background:#1c1c1c;
-    border-radius:10px;
-    border:none;
-    padding:8px;
-    color:#fff;
-    resize:none;
+    display:none;margin-top:8px;width:100%;height:60px;
+    background:#222;border:none;border-radius:8px;
+    color:#fff;padding:6px
 }
 
-/* Anexo */
-#anexo{
-    margin-top:10px;
-    width:100%;
-    background:#1c1c1c;
-    border-radius:10px;
-    border:none;
-    padding:6px;
-    color:#fff;
-    font-size:12px;
+/* Captcha */
+#captchaBox{
+    margin-top:10px;background:#1a1a1a;
+    border-radius:10px;padding:10px;text-align:center
 }
+.captcha-area{
+    display:flex;justify-content:space-between;margin-top:8px
+}
+#captchaDrag,#captchaTarget{
+    width:42px;height:42px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px
+}
+#captchaDrag{background:#8b0000;color:#fff;cursor:grab}
+#captchaTarget{border:2px dashed #555;color:#0f0}
+#captchaBox.ok #captchaTarget{background:#00aa55;border:none;color:#fff}
 
+/* Enviar */
 #enviarReport{
-    margin-top:14px;
-    width:100%;
-    padding:10px;
-    border-radius:14px;
-    border:none;
-    background:linear-gradient(135deg,#ff3b3b,#b00000);
-    color:#fff;
-    font-weight:bold;
-    cursor:pointer;
+    margin-top:10px;width:100%;padding:10px;
+    border:none;border-radius:14px;
+    background:linear-gradient(135deg,#ff3b3b,#8b0000);
+    color:#fff;font-weight:bold;cursor:pointer
 }
-
-#statusMsg{
-    margin-top:8px;
-    text-align:center;
-    font-size:12px;
-    display:none;
-}
+#statusMsg{margin-top:6px;font-size:12px;text-align:center;display:none}
 </style>
 </head>
 
 <body>
 
 <button id="btnTravou">Travou? Clique aqui</button>
-
-<button id="btnReportar">
-    <i class="fa-solid fa-triangle-exclamation"></i>
-</button>
+<button id="btnReportar"><i class="fa-solid fa-triangle-exclamation"></i></button>
 
 <div id="reportBox">
-    <div class="report-header">
-        <i class="fa-solid fa-bug"></i> Reportar problema
-    </div>
+    <strong><i class="fa-solid fa-bug"></i> Reportar problema</strong>
 
     <div class="report-grid">
-        <div class="motivo" data-value="Canal fora do ar"><i class="fa-solid fa-circle-xmark"></i>Canal fora do ar</div>
-        <div class="motivo" data-value="Está travando"><i class="fa-solid fa-spinner"></i>Travando</div>
-        <div class="motivo" data-value="Erro de áudio ou vídeo"><i class="fa-solid fa-volume-xmark"></i>Áudio/Vídeo</div>
-        <div class="motivo" data-value="Canal inválido"><i class="fa-solid fa-ban"></i>Canal inválido</div>
-        <div class="motivo" data-value="Outros"><i class="fa-solid fa-ellipsis"></i>Outros</div>
+        <div class="motivo" data="Canal não está funcionando"><i class="fa-solid fa-circle-xmark"></i>Canal fora do ar</div>
+        <div class="motivo" data="Está travando"><i class="fa-solid fa-spinner"></i>Travando</div>
+        <div class="motivo" data="Canal não existe"><i class="fa-solid fa-ban"></i>Canal inválido</div>
+        <div class="motivo" data="Erro de áudio ou vídeo"><i class="fa-solid fa-volume-xmark"></i>Áudio/Vídeo</div>
+        <div class="motivo" data="Outros"><i class="fa-solid fa-ellipsis"></i>Outros</div>
     </div>
 
-    <textarea id="outrosTexto" placeholder="Descreva o problema..."></textarea>
+    <textarea id="outrosTexto" placeholder="Descreva o problema"></textarea>
 
-    <input type="file" id="anexo" accept="image/*,.pdf,.txt,.log,.zip">
+    <input type="file" id="anexo" accept="image/*" style="margin-top:8px;color:#ccc">
+
+    <div id="captchaBox">
+        Arraste o ícone para o alvo
+        <div class="captcha-area">
+            <div id="captchaDrag"><i class="fa-solid fa-bug"></i></div>
+            <div id="captchaTarget"><i class="fa-solid fa-flag-checkered"></i></div>
+        </div>
+    </div>
 
     <button id="enviarReport"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
     <div id="statusMsg"></div>
 </div>
 
-<iframe id="playerFrame"
-    src="<?= htmlspecialchars($urlIframe, ENT_QUOTES) ?>"
-    allow="encrypted-media"
-    allowfullscreen
-    scrolling="no">
-</iframe>
+<iframe id="playerFrame" src="<?=htmlspecialchars($urlIframe)?>" allowfullscreen></iframe>
 
 <script>
-const canal = <?= json_encode($canal) ?>;
-const iframe = document.getElementById("playerFrame");
+const box=document.getElementById("reportBox");
+btnReportar.onclick=()=>box.style.display=box.style.display=="block"?"none":"block";
 
-const reportBox = document.getElementById("reportBox");
-const btnReportar = document.getElementById("btnReportar");
-const btnEnviar = document.getElementById("enviarReport");
-const outrosTexto = document.getElementById("outrosTexto");
-const statusMsg = document.getElementById("statusMsg");
-const anexoInput = document.getElementById("anexo");
+let motivo="",captchaOK=false;
 
-let motivoSelecionado = "";
-
-btnReportar.onclick = () => {
-    reportBox.style.display = reportBox.style.display === "block" ? "none" : "block";
-};
-
-document.querySelectorAll(".motivo").forEach(el => {
-    el.onclick = () => {
-        document.querySelectorAll(".motivo").forEach(m => m.classList.remove("active"));
-        el.classList.add("active");
-        motivoSelecionado = el.dataset.value;
-        outrosTexto.style.display = motivoSelecionado === "Outros" ? "block" : "none";
-    };
+document.querySelectorAll(".motivo").forEach(m=>{
+ m.onclick=()=>{
+  document.querySelectorAll(".motivo").forEach(x=>x.classList.remove("active"));
+  m.classList.add("active");
+  motivo=m.getAttribute("data");
+  outrosTexto.style.display=motivo=="Outros"?"block":"none";
+ }
 });
 
-btnEnviar.onclick = () => {
-    if (!motivoSelecionado) return;
-
-    let texto = motivoSelecionado;
-    if (motivoSelecionado === "Outros" && outrosTexto.value.trim()) {
-        texto += " - " + outrosTexto.value.trim();
-    }
-
-    const formData = new FormData();
-    formData.append("canal", canal);
-    formData.append("url", iframe.src);
-    formData.append("erro", texto);
-
-    if (anexoInput.files[0]) {
-        formData.append("anexo", anexoInput.files[0]);
-    }
-
-    statusMsg.style.display = "block";
-    statusMsg.style.color = "#ccc";
-    statusMsg.textContent = "Enviando...";
-
-    fetch("telegram_log.php", { method:"POST", body:formData })
-        .then(r => r.text())
-        .then(() => {
-            statusMsg.style.color = "#00ff88";
-            statusMsg.textContent = "Enviado com sucesso";
-        })
-        .catch(() => {
-            statusMsg.style.color = "#ff5555";
-            statusMsg.textContent = "Erro ao enviar";
-        })
-        .finally(() => {
-            setTimeout(() => {
-                reportBox.style.display = "none";
-                statusMsg.style.display = "none";
-                outrosTexto.value = "";
-                anexoInput.value = "";
-                motivoSelecionado = "";
-                document.querySelectorAll(".motivo").forEach(m => m.classList.remove("active"));
-            }, 2500);
-        });
+captchaDrag.draggable=true;
+captchaDrag.ondragstart=e=>e.dataTransfer.setData("ok","1");
+captchaTarget.ondragover=e=>e.preventDefault();
+captchaTarget.ondrop=e=>{
+ e.preventDefault();captchaOK=true;captchaBox.classList.add("ok");
 };
 
-document.getElementById("btnTravou").onclick = () => {
-    iframe.src = iframe.src;
+enviarReport.onclick=()=>{
+ if(!motivo||!captchaOK)return;
+ let texto=motivo;
+ if(motivo=="Outros"&&outrosTexto.value)texto+=" - "+outrosTexto.value;
+
+ let fd=new FormData();
+ fd.append("canal","<?=$canal?>");
+ fd.append("url",playerFrame.src);
+ fd.append("erro",texto);
+ if(anexo.files[0])fd.append("foto",anexo.files[0]);
+
+ statusMsg.style.display="block";
+ statusMsg.textContent="Enviando...";
+
+ fetch("telegram_log.php",{method:"POST",body:fd})
+ .then(r=>r.text())
+ .then(r=>{
+   statusMsg.textContent=r=="OK"?"Enviado com sucesso":"Erro ao enviar";
+   statusMsg.style.color=r=="OK"?"#0f0":"#f55";
+ });
 };
+
+btnTravou.onclick=()=>playerFrame.src=playerFrame.src;
 </script>
-
 </body>
 </html>
