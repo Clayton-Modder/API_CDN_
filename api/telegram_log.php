@@ -1,56 +1,33 @@
+
 <?php
-// ================== CONFIGURAÇÃO ==================
-$BOT_TOKEN = "8553413416:AAETpmhLL933bqSv__RsVtp9j8RJI1D3WjI";
-$CHAT_ID  = "-5286992033"; // ID REAL DO GRUPO (com sinal -)
+$token  = "8553413416:AAETpmhLL933bqSv__RsVtp9j8RJI1D3WjI";
+$chatId = "-5286992033";
 
 $canal = $_POST['canal'] ?? 'N/A';
 $url   = $_POST['url'] ?? 'N/A';
 $erro  = $_POST['erro'] ?? 'N/A';
 
-$caption  = "🚨 *Relatório de Canal*\n\n";
-$caption .= "📺 Canal: `$canal`\n";
-$caption .= "❌ Problema: $erro\n";
-$caption .= "🔗 URL: $url";
+$msg  = "🚨 Relatório de Canal\n\n";
+$msg .= "Canal: $canal\n";
+$msg .= "Problema: $erro\n";
+$msg .= "URL: $url";
 
-if (!empty($_FILES['anexo']['tmp_name'])) {
-
-    $fileTmp  = $_FILES['anexo']['tmp_name'];
-    $fileName = $_FILES['anexo']['name'];
-    $mime     = mime_content_type($fileTmp);
-
-    if (strpos($mime, 'image/') === 0) {
-        $endpoint = "sendPhoto";
-        $field = "photo";
-    } else {
-        $endpoint = "sendDocument";
-        $field = "document";
-    }
-
-    $urlApi = "https://api.telegram.org/bot$token/$endpoint";
-
-    $post = [
+$ch = curl_init("https://api.telegram.org/bot$token/sendMessage");
+curl_setopt_array($ch, [
+    CURLOPT_POST => true,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POSTFIELDS => [
         'chat_id' => $chatId,
-        'caption' => $caption,
-        'parse_mode' => 'Markdown',
-        $field => new CURLFile($fileTmp, $mime, $fileName)
-    ];
+        'text' => $msg
+    ]
+]);
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $urlApi);
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_exec($ch);
-    curl_close($ch);
+$response = curl_exec($ch);
+$err = curl_error($ch);
+curl_close($ch);
 
+if ($response === false) {
+    echo "ERRO CURL: $err";
 } else {
-
-    file_get_contents("https://api.telegram.org/bot$token/sendMessage?" . http_build_query([
-        'chat_id' => $chatId,
-        'text' => $caption,
-        'parse_mode' => 'Markdown',
-        'disable_web_page_preview' => true
-    ]));
+    echo "OK";
 }
-
-echo "OK";
