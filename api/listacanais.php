@@ -1409,6 +1409,26 @@ return array(
  "SicNovelas-4" => "https://canaisnatv.me/ply.php?link=https://popcdn.day/play.php?stream=SIC-Novelas",
 
 
+"Xsports-1" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+   
+    "Xsports-2" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+    
+  "Xsports-3" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+
+ "Xsports-4" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+
+
+"Disneyplus-1" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus1",
+   
+    "Disneyplus-2" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus2",
+    
+  "Disneyplus-3" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus3",
+
+ "Disneyplus-4" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus4",
+
+
+
+
 "SicNoticias-1" => "https://megacanaisonline.space/tv2.php?canal=https://d277k9d1h9dro4.cloudfront.net/out/v1/293e7c3464824cbd8818ab8e49dc5fe9/index.m3u8",
    
     "SicNoticias-2" => "https://megacanaisonline.space/tv2.php?canal=https://d277k9d1h9dro4.cloudfront.net/out/v1/293e7c3464824cbd8818ab8e49dc5fe9/index.m3u8",
@@ -1555,6 +1575,27 @@ return array(
   "Nsports-3" => "https://rdcanais.top/nsports",
 
  "Nsports-4" => "https://rdcanais.top/nsports",
+
+
+
+"GeTV-1" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+   
+    "GeTV-2" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+    
+  "GeTV-3" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+
+ "GeTV-4" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+
+
+"SBTNews-1" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+   
+    "SBTNews-2" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+    
+  "SBTNews-3" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+
+ "SBTNews-4" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+
+
 
   
 #TABELAS
