@@ -1520,6 +1520,14 @@ return array(
  "PortoCanal" => "https://megacanaisonline.space/tv2.php?canal=https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8",
 
 
+"DragonBallZ-1" => "https://www1.embedtv.best/24h_dragonball",
+   
+    "DragonBallZ-2" => "https://www1.embedtv.best/24h_dragonball",
+    
+  "DragonBallZ-3" => "https://www1.embedtv.best/24h_dragonball",
+
+ "DragonBallZ-4" => "https://www1.embedtv.best/24h_dragonball",
+
 
 
 "Redesuper-1" => "https://megacanaisonline.space/tv2.php?canal=https://tv02.zas.media:1936/redesuper/redesuper/playlist.m3u8",
@@ -1594,6 +1602,28 @@ return array(
   "SBTNews-3" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
 
  "SBTNews-4" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+
+
+
+
+"TVtelesur-1" => "https://megacanaisonline.space/tv2.php?canal=https://mblesmain01.telesur.ultrabase.net/mbliveMain/480p/playlist.m3u8",
+   
+    "TVtelesur-2" => "https://megacanaisonline.space/tv2.php?canal=https://mblesmain01.telesur.ultrabase.net/mbliveMain/480p/playlist.m3u8",
+    
+  "TVtelesur-3" => "https://megacanaisonline.space/tv2.php?canal=https://mblesmain01.telesur.ultrabase.net/mbliveMain/480p/playlist.m3u8",
+
+ "TVtelesur-4" => "https://megacanaisonline.space/tv2.php?canal=https://mblesmain01.telesur.ultrabase.net/mbliveMain/480p/playlist.m3u8",
+
+
+
+"TVtelesur-1" => "https://megacanaisonline.space/tv2.php?canal=https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8",
+   
+    "TVtelesur-2" => "https://megacanaisonline.space/tv2.php?canal=https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8",
+    
+  "TVtelesur-3" => "https://megacanaisonline.space/tv2.php?canal=https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8",
+
+ "TVtelesur-4" => "https://megacanaisonline.space/tv2.php?canal=https://amg00803-cnnfast-amg00803c3-lg-es-5477.playouts.now.amagi.tv/playlist1080p.m3u8",
+
 
 
 
