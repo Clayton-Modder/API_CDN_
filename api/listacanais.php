@@ -164,7 +164,7 @@ return array(
  "premiere6" => "https://redecanais.fm/player3/ch.php?canal=premiere6",
  "premiere7" => "https://redecanais.fm/player3/ch.php?canal=premiere7",
    "tnt" => "https://redecanais.fm/player3/ch.php?canal=tnt", 
-  "tnt-2" => "https://www.embedtv.net/embed/tnt", 
+  "tnt-2" => "https://www1.embedtv.best/tnt", 
   "tnt-3" => "https://www1.embedtv.best/tnt_hd",
 "tnt-4" => "https://rdcanais.top/tnt",
   
@@ -356,9 +356,9 @@ return array(
  
  
    "Cazetv-1" => "https://rdcanais.top/embed/?id=cazetv",
- "Cazetv-2" => "https://www.embed-2.icu/embed/caze-tv",
- "Cazetv-3" => "https://www.embed-2.icu/embed/caze-tv-2",
- "Cazetv-4" => "https://www.embed-2.icu/embed/caze-tv-3",
+ "Cazetv-2" => "https://www1.embedtv.best/caze-tv",
+ "Cazetv-3" => "https://www1.embedtv.best/caze-tv-2",
+ "Cazetv-4" => "https://www1.embedtv.best/caze-tv-3",
  "Cazetv-5" => "https://playertv.net/e/?v=caze1",
  
  
@@ -391,7 +391,7 @@ return array(
    "tnt-sports-extra" => "https://megacanaisonline.space/tv2.php?canal=https://glxlmn026c.singularcdn.net.br/playout_01/playlist-720p.m3u8",
  
    "tnt-sports-1" => "https://redecanais.fm/player3/ch.php?canal=tnt",
-     "tnt-sports-2" => "https://www.embed-2.icu/embed/tnt",
+     "tnt-sports-2" => "https://www1.embedtv.best/tnt",
        "tnt-sports-3" => "https://www1.embedtv.best/tnt",
          "tnt-sports-4" => "https://embedtv.org/tnt/",
          "tnt-sports-5" => "https://rdcanais.top/tnt",
@@ -585,7 +585,7 @@ return array(
             "tvi-Reality-4" => "https://megacanaisonline.space/tv2.php?canal=https://video-auth4.iol.pt/live_tvi_reality/live_tvi_reality/edge_servers/tvireality-720_passthrough/playlist.m3u8",
   
       "GloboNews" => "https://redecanais.fm/player3/ch.php?canal=globonews",
-  "GloboNews-2" => "https://www.embed-2.icu/embed/globo-news",
+  "GloboNews-2" => "https://www1.embedtv.best/globo-news",
     "GloboNews-3" => "https://playertv.net/e/?v=globoNews",
         "GloboNews-4" => "https://www1.embedtv.best/globonews",
 "GloboNews-5" => "https://rdcanais.top/globonews",
@@ -609,9 +609,9 @@ return array(
      "abcnews-4" => "https://megacanaisonline.space/tv2.php?canal=https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
      
  "RecordNewss" => "https://redecanais.fm/player3/ch.php?canal=recordnews",
- "RecordNewss-2" => "https://www.embed-2.icu/embed/record-news",
+ "RecordNewss-2" => "https://www1.embedtv.best/record-news",
  "RecordNewss-3" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431",
- "RecordNewss-4" => "https://www.embedtv.net/embed/record-news",
+ "RecordNewss-4" => "https://www1.embedtv.best/record-news",
  "RecordNewss-5" => "https://rdcanais.top/embed/?id=recordnews",
      
             "cbsnews" => "https://megacanaisonline.space/tv2.php?canal=https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master_9.m3u8",
@@ -751,7 +751,7 @@ return array(
  "Usa-Network" => "https://redecanais.fm/player3/ch.php?canal=usa",
    "Usa-Network-2" => "https://embedtv.org/usa/",
  "Usa-Network-3" => "https://embedtv.org/usa/",
-  "Usa-Network-4" => "https://www.embed-2.icu/embed/usa",
+  "Usa-Network-4" => "https://www1.embedtv.best/usa",
     "Usa-Network-5" => "https://rdcanais.top/embed/?id=usa",
  
  #MENU REALITY SHOWS 
@@ -888,7 +888,7 @@ return array(
 "tvratimbum-4" => "https://rdcanais.top/embed/?id=ratimbum",
 
   "globinho-1" => "https://redecanais.fm/player3/ch.php?canal=gloobinho",
-  "globinho-2" => "https://www.embedtv.net/embed/gloobinho",
+  "globinho-2" => "https://www1.embedtv.best/gloobinho",
   "globinho-3" => "https://playertv.net/e/?v=gloobinho",
   "globinho-4" => "https://rdcanais.top/gloobinho",
 
@@ -982,7 +982,7 @@ return array(
     "Novelisima-1" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=2380",
   
    "tntnovelas" => "https://redecanais.fm/player3/ch.php?canal=tntnovelas",
-  "tntnovelas-2" => "https://www.embed-2.icu/embed/tnt-novelas",
+  "tntnovelas-2" => "https://www1.embedtv.best/tnt-novelas",
    "tntnovelas-3" => "https://www1.embedtv.best/tnt_novelas_hd",
   "tntnovelas-4" => "https://rdcanais.top/tntnovelas",
   
@@ -1104,8 +1104,8 @@ return array(
     "Disneyplus-6" => "https://www1.embedtv.best/disneyplus1",
 
 "CanalGoat-1" => "https://www1.embedtv.best/goat1",
-    "CanalGoat-2" => "https://www.embed-2.icu/embed/canal-goat",
-    "CanalGoat-3" => "https://www.embed-2.icu/embed/canal-goat-2",
+    "CanalGoat-2" => "https://www1.embedtv.best/canal-goat",
+    "CanalGoat-3" => "https://www1.embedtv.best/canal-goat-2",
     "CanalGoat-4" => "https://www1.embedtv.best/goat1",
      
 
@@ -1123,10 +1123,10 @@ return array(
     
 
 
- "EuroSports-1" => "https://www.embed-2.icu/embed/pt-eurosport",
-    "EuroSports2-2" => "https://www.embed-2.icu/embed/pt-eurosport-2",
-    "EuroSports2-3" => "https://www.embed-2.icu/embed/pt-eurosport",
-    "EuroSports2-4" => "https://www.embed-2.icu/embed/pt-eurosport-2",
+ "EuroSports-1" => "https://www1.embedtv.best/pt-eurosport",
+    "EuroSports2-2" => "https://www1.embedtv.best/pt-eurosport-2",
+    "EuroSports2-3" => "https://www1.embedtv.best/pt-eurosport",
+    "EuroSports2-4" => "https://www1.embedtv.best/pt-eurosport-2",
 
 
 "Novelasturcas-1" => "https://megacanaisonline.space/tv2.php?canal=https://amg00658-amg00658c102-canelatv-international-7231.playouts.now.amagi.tv/playlist/amg00658-canelamediafast-novelasturcas-canelatvinternational/playlist.m3u8",
@@ -1169,7 +1169,7 @@ return array(
      "ae-3" => "https://www1.embedtv.best/ae",
        "ae-4" => "https://rdcanais.top/embed/?id=aee",
      "Axn" => "https://redecanais.fm/player3/ch.php?canal=axn",
-     "Axn-2" => "https://www.embedtv.net/embed/axn",
+     "Axn-2" => "https://www1.embedtv.best/axn",
      "Axn-3" => "https://www1.embedtv.best/axn",
      "RuntimeComedia" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=2553",
      "RuntimeComedia-2" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=2553",
@@ -1203,7 +1203,7 @@ return array(
           "Telecinetouch" => "https://redecanais.fm/player3/ch.php?canal=telecinetouch",
      "Telecinetouch-2" => "https://nossoplayeronlinehd.online/tv/telecinetouch",
      "Telecinetouch-3" => "https://www1.embedtv.best/Telecine_Touch",
-     "Telecinetouch-4" => "https://www.embedtv.net/embed/telecine-touch",
+     "Telecinetouch-4" => "https://www1.embedtv.best/telecine-touch",
       "Telecinetouch-5" => "https://rdcanais.top/telecinetouch",
 
      
@@ -1277,7 +1277,7 @@ return array(
  "hbopop" => "https://redecanais.fm/player3/ch.php?canal=hbopop",
  "hbopop-2" => "https://www1.embedtv.best/hbopop",
  "hbopop-3" => "https://www1.embedtv.best/hbopop",
-"hbopop-4" => "https://www.embedtv.net/embed/hbo-pop",
+"hbopop-4" => "https://www1.embedtv.best/hbo-pop",
 "hbopop-5" => "https://embedtv.org/hbopop/",
 
 
@@ -1321,7 +1321,7 @@ return array(
 
 
 "e" => "https://redecanais.fm/player3/ch.php?canal=canale",
-  "e-2" => "https://www.embed-2.icu/embed/e",   
+  "e-2" => "https://www1.embedtv.best/e",   
     "e-3" => "https://rdcanais.top/embed/?id=e",
    "e-4" => "https://rdcanais.top/embed/?id=e",
   
@@ -1366,7 +1366,7 @@ return array(
   "CanalBrasil-4" => "https://rdcanais.top/embed/?id=canalbrasil",
 
   "tvcultura" => "https://megacanaisonline.space/tv2.php?canal=https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
-  "tvcultura-2" => "https://www.embed-2.icu/embed/tv-cultura",
+  "tvcultura-2" => "https://www1.embedtv.best/tv-cultura",
     "tvcultura-3" => "https://www1.embedtv.best/cultura",
       "tvcultura-4" => "https://rdcanais.top/embed/?id=tvcultura",
       
