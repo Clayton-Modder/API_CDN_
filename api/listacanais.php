@@ -640,8 +640,8 @@ return array(
  "ostrespatetas" => "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1eed3c29b39600073e2ec0/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=108&deviceId=5f1eed3c29b39600073e2ec0&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=-23.5475&deviceLon=-46.6361&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=BR&serverSideAds=false",
  
 "history-1" => "https://redecanais.fm/player3/ch.php?canal=history",
-"history-2" => "https://megacanaisonline.space/api/s.php?canal=history_hd",
-"history-3" => "https://megacanaisonline.space/api/s.php?canal=history_hd",
+"history-2" => "https://megacanaisonline.space/api/s.php?canal=history",
+"history-3" => "https://megacanaisonline.space/api/s.php?canal=history",
 "history-4" => "https://megacanaisonline.space/api/s.php?canal=history",
 "history-5" => "https://rdcanais.top/history",
 
@@ -716,8 +716,8 @@ return array(
 
 
  "history2-1" => "https://redecanais.fm/player3/ch.php?canal=history2",
-"history2-2" => "https://megacanaisonline.space/api/s.php?canal=history_2_hd",
-"history2-3" => "https://megacanaisonline.space/api/s.php?canal=history_2_hd",
+"history2-2" => "https://megacanaisonline.space/api/s.php?canal=history2",
+"history2-3" => "https://megacanaisonline.space/api/s.php?canal=history2",
 "history2-4" => "https://embedflix.gold/tv/h2",
 "history2-4" => "https://rdcanais.top/history2",
 
@@ -1092,7 +1092,7 @@ return array(
 
      "DiscoveryKids" => "https://redecanais.fm/player3/ch.php?canal=discoverykids",
     "DiscoveryKids-2" => "https://embedtv.org/discoverykids/",
-        "DiscoveryKids-3" => "https://megacanaisonline.space/api/s.php?canal=discovery_kids_hd",
+        "DiscoveryKids-3" => "https://megacanaisonline.space/api/s.php?canal=discoverykids",
          "DiscoveryKids-4" => "https://rdcanais.top/embed/?id=discoverykids",
 
 
