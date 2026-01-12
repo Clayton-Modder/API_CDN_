@@ -1352,10 +1352,10 @@ return array(
     
     "CanalUol-3" => "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6238c63deec07b000723dd77/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown",
     
-        "JovenPanNews" => "https://api.panflix.com.br/User/RedirectToSignedUrlExt?url=https%3A%2F%2Flive.panflix.com.br%2Fout%2Fv1%2F7836eb391ec24452b149f3dc6df15bbd%2Findex.m3u8&key=2c5831ee-53e0-11ee-8c99-0242ac120002",
-    "JovenPanNews-2" => "https://api.panflix.com.br/User/RedirectToSignedUrlExt?url=https%3A%2F%2Flive.panflix.com.br%2Fout%2Fv1%2F7836eb391ec24452b149f3dc6df15bbd%2Findex.m3u8&key=2c5831ee-53e0-11ee-8c99-0242ac120002",
-    "JovenPanNews-3" => "https://api.panflix.com.br/User/RedirectToSignedUrlExt?url=https%3A%2F%2Flive.panflix.com.br%2Fout%2Fv1%2F7836eb391ec24452b149f3dc6df15bbd%2Findex.m3u8&key=2c5831ee-53e0-11ee-8c99-0242ac120002",
-    "JovenPanNews-4" => "https://api.panflix.com.br/User/RedirectToSignedUrlExt?url=https%3A%2F%2Flive.panflix.com.br%2Fout%2Fv1%2F7836eb391ec24452b149f3dc6df15bbd%2Findex.m3u8&key=2c5831ee-53e0-11ee-8c99-0242ac120002",
+        "JovenPanNews" => "https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index_10.m3u8",
+    "JovenPanNews-2" => "https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index_10.m3u8",
+    "JovenPanNews-3" => "https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index_10.m3u8",
+    "JovenPanNews-4" => "https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index_10.m3u8",
  
  "CanalBrasil" => "https://redecanais.fm/player3/ch.php?canal=canalbrasil",
   
@@ -1371,10 +1371,10 @@ return array(
       "tvcultura-4" => "https://rdcanais.top/embed/?id=tvcultura",
       
           "universal" => "https://redecanais.fm/player3/ch.php?canal=universal",
-  "universal-2" => "https://embedtv.org/universaltv/",
-    "universal-3" => "https://embedtv.org/universaltv/",
-        "universal-4" => "https://embedtv.org/universaltv/",
-                "universal-5" => "https://embedtv.org/universaltv/",
+  "universal-2" => "https://www1.embedtv.best/universaltv",
+    "universal-3" => "https://www1.embedtv.best/universaltv",
+        "universal-4" => "https://www1.embedtv.best/universaltv",
+                "universal-5" => "https://www1.embedtv.best/universaltv",
     
     "Cinecanal" => "https://redecanais.fm/player3/ch.php?canal=cinecanal",
   "Cinecanal-2" => "https://playertv.net/e/?v=cineCanal",
@@ -1383,12 +1383,12 @@ return array(
 
     
         "starchannel" => "https://redecanais.fm/player3/ch.php?canal=starchannel",
-  "starchannel-2" => "https://embedtv.org/starchannel/",
-    "starchannel-3" => "https://playertv.net/e/?v=star",
+  "starchannel-2" => "https://redecanais.fm/player3/ch.php?canal=starchannel",
+    "starchannel-3" => "https://redecanais.fm/player3/ch.php?canal=starchannel",
  "starchannel-4" => "https://rdcanais.top/embed/?id=starchannel",
     
     "AdultSwim" => "https://redecanais.fm/player3/ch.php?canal=adultswim",
-  "AdultSwim-2" => "https://embedtv.org/adultswim/",
+  "AdultSwim-2" => "https://www1.embedtv.best/adultswim",
     "AdultSwim-3" => "https://www1.embedtv.best/adultswim",
         "AdultSwim-4" => "https://rdcanais.top/embed/?id=adultswim",
   
@@ -1440,7 +1440,7 @@ return array(
 
 "dragonballz-1" => "https://www1.embedtv.best/dragonball",
    
-    "dragonballz-2" => "https://embedtv.org/24h-dragonballz/",
+    "dragonballz-2" => "https://www1.embedtv.best/dragonball",
     
   "dragonballz-3" => "https://www1.embedtv.best/dragonball",
 
