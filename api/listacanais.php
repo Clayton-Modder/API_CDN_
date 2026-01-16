@@ -648,9 +648,9 @@ return array(
 
 
 "discoveryTurbo-1" => "https://redecanais.fm/player3/ch.php?canal=discoveryturbo",
-"discoveryTurbo-2" => "https://www1.embedtv.best/discovery_turbo_hd",
- "discoveryTurbo-3" => "https://www1.embedtv.best/discovery_turbo_hd",
- "discoveryTurbo-4" => "https://www1.embedtv.best/discovery_turbo_hd",
+"discoveryTurbo-2" => "https://www1.embedtv.best/discoveryturbo",
+ "discoveryTurbo-3" => "https://www1.embedtv.best/discoveryturbo",
+ "discoveryTurbo-4" => "https://www1.embedtv.best/discoveryturbo",
  "discoveryTurbo-5" => "https://rdcanais.top/discoveryturbo",
  
 "discoveryChannel-1" => "https://redecanais.fm/player3/ch.php?canal=discovery",
@@ -734,7 +734,7 @@ return array(
 "tvnatureza-3" => "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1213ba0ecebc00070e170f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1",
 
   "Cartoonito" => "https://redecanais.fm/player3/ch.php?canal=cartoonito",
-  "Cartoonito-2" => "https://embedtv.org/cartoonito/", 
+  "Cartoonito-2" => "https://www1.embedtv.best/cartoonito", 
   "Cartoonito-3" => "https://playertv.net/e/?v=cartoonito", 
   "Cartoonito-4" => "https://rdcanais.top/embed/?id=cartoonito",
  
@@ -1058,7 +1058,7 @@ return array(
  "Curta-4" => "https://rdcanais.top/embed/?id=curta",
  
    "CartoonNetwork" => "https://redecanais.fm/player3/ch.php?canal=cartoon",
-"CartoonNetwork-2" => "https://embedtv.org/cartoonnetwork/",
+"CartoonNetwork-2" => "https://www1.embedtv.best/cartoonnetwork",
  "CartoonNetwork-3" => "https://embedflix.gold/tv/cartoon-network",  
  "CartoonNetwork-4" => "https://rdcanais.top/embed/?id=cartoonnetwork",
  
