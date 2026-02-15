@@ -190,17 +190,17 @@ return array(
  "Paulistao2" => "https://futelive.net/tv/paulistao-play-2",
  "Paulistao3" => "https://futelive.net/tv/paulistao-play-3",
  "TycSports" => "https://megacanaisonline.space/tv2.php?canal=https://d1xm2jznwi5xzj.cloudfront.net/out/v1/34e0da501a8c4489b713809eb08a9bf3/index_14.m3u8",
- "hbomax" => "https://redecanaistv.fm/player3/ch.php?canal=hbomax1",
+ "hbomax" => "https://redecanais.cafe/player3/ch.php?canal=hbomax1",
  "hbomax-2" => "https://rdcanais.top/max",
  "hbomax-3" => "https://rdcanais.top/max",
  "hbomax4" => "https://rdcanais.top/max",
  
- "hbomax2" => "https://redecanaistv.fm/player3/ch.php?canal=hbomax2",
+ "hbomax2" => "https://redecanais.cafe/player3/ch.php?canal=hbomax2",
  "hbomax2-2" => "https://rdcanais.top/max2",
  "hbomax2-3" => "https://rdcanais.top/max2",
  "hbomax2-4" => "https://rdcanais.top/max2",
 
- "hbomax3" => "https://redecanaistv.fm/player3/ch.php?canal=hbomax3",
+ "hbomax3" => "https://redecanais.cafe/player3/ch.php?canal=hbomax3",
  "hbomax3-2" => "https://rdcanais.top/max3",
  "hbomax3-3" => "https://rdcanais.top/max3",
  "hbomax3-3" => "https://rdcanais.top/max3",
@@ -1409,22 +1409,22 @@ return array(
  "SicNovelas-4" => "https://canaisnatv.me/ply.php?link=https://popcdn.day/play.php?stream=SIC-Novelas",
 
 
-"Xsports-1" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+"Xsports-1" => "https://redecanais.cafe/player3/ch.php?canal=xsports",
    
-    "Xsports-2" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+    "Xsports-2" => "https://redecanais.cafe/player3/ch.php?canal=xsports",
     
-  "Xsports-3" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+  "Xsports-3" => "https://redecanais.cafe/player3/ch.php?canal=xsports",
 
- "Xsports-4" => "https://redecanaistv.fm/player3/ch.php?canal=xsports",
+ "Xsports-4" => "https://redecanais.cafe/player3/ch.php?canal=xsports",
 
 
-"Disneyplus-1" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus1",
+"Disneyplus-1" => "https://redecanais.cafe/player3/ch.php?canal=disneyplus1",
    
-    "Disneyplus-2" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus2",
+    "Disneyplus-2" => "https://redecanais.cafe/player3/ch.php?canal=disneyplus2",
     
-  "Disneyplus-3" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus3",
+  "Disneyplus-3" => "https://redecanais.cafe/player3/ch.php?canal=disneyplus3",
 
- "Disneyplus-4" => "https://redecanaistv.fm/player3/ch.php?canal=disneyplus4",
+ "Disneyplus-4" => "https://redecanais.cafe/player3/ch.php?canal=disneyplus4",
 
 
 
@@ -1586,22 +1586,22 @@ return array(
 
 
 
-"GeTV-1" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+"GeTV-1" => "https://redecanais.cafe/player3/ch.php?canal=getv",
    
-    "GeTV-2" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+    "GeTV-2" => "https://redecanais.cafe/player3/ch.php?canal=getv",
     
-  "GeTV-3" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+  "GeTV-3" => "https://redecanais.cafe/player3/ch.php?canal=getv",
 
- "GeTV-4" => "https://redecanaistv.fm/player3/ch.php?canal=getv",
+ "GeTV-4" => "https://redecanais.cafe/player3/ch.php?canal=getv",
 
 
-"SBTNews-1" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+"SBTNews-1" => "https://redecanais.cafe/player3/ch.php?canal=sbtnews",
    
-    "SBTNews-2" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+    "SBTNews-2" => "https://redecanais.cafe/player3/ch.php?canal=sbtnews",
     
-  "SBTNews-3" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+  "SBTNews-3" => "https://redecanais.cafe/player3/ch.php?canal=sbtnews",
 
- "SBTNews-4" => "https://redecanaistv.fm/player3/ch.php?canal=sbtnews",
+ "SBTNews-4" => "https://redecanais.cafe/player3/ch.php?canal=sbtnews",
 
 
 
