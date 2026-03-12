@@ -11,7 +11,7 @@ return array(
   
   "Globors" => "https://playertv.net/e/?v=globo-rs",
   "Globors-2" => "https://playertv.net/e/?v=globo-rs",
-  "Globors-3" => "https://rdcanais.top/embed/?id=globors-rbstvcaxiasdosul",
+  "Globors-3" => "https://rdcanais.com/embed/?id=globors-rbstvcaxiasdosul",
  
   
   
@@ -22,21 +22,21 @@ return array(
   "Globo-RJ" => "https://redecanais.cafe/player3/ch.php?canal=boborj",
   "Globo-RJ-2" => "https://www2.embedtv.best/globorj",
   "Globo-RJ-3" => "https://nossoplayeronlinehd.site/tv/globorj",
-  "Globo-RJ-4" => "https://rdcanais.top/globorj",
+  "Globo-RJ-4" => "https://rdcanais.com/globorj",
   "Globo-RJ-5" => "https://embedtv.org/globorj/",
-  "Globo-RJ-6" => "https://rdcanais.top/globorj", 
+  "Globo-RJ-6" => "https://rdcanais.com/globorj", 
   
   "Globo-MG" => "https://redecanaistv.bh/player3/ch.php?canal=bobomg",
   "Globo-MG-2" => "https://www2.embedtv.best/globomg",
   "Globo-MG-3" => "https://www2.embedtv.best/globomg",
   "Globo-MG-4" => "https://www2.embedtv.best/globomg",
-  "Globo-MG-5" => "https://rdcanais.top/globomg",
+  "Globo-MG-5" => "https://rdcanais.com/globomg",
   
   "Globo-SP" => "https://redecanais.cafe/player3/ch.php?canal=bobosp",
  "Globo-SP-2" => "https://www2.embedtv.best/globosp",
  "Globo-SP-3" => "https://www2.embedtv.best/globosp",
  "Globo-SP-4" => "https://www2.embedtv.best/globosp",
-  "Globo-SP-5" => "https://rdcanais.top/globosp",
+  "Globo-SP-5" => "https://rdcanais.com/globosp",
   
 
   
@@ -56,13 +56,13 @@ return array(
   
   "Globo-se" => "https://reidoscanais.online/apidecanais/livetv.php?id=globope",
 
- "Globo-Ba" => "https://rdcanais.top/globoba",
- "Globo-Ba-2" => "https://rdcanais.top/globoba",
-  "Globo-Ba-3" => "https://rdcanais.top/globoba",
+ "Globo-Ba" => "https://rdcanais.com/globoba",
+ "Globo-Ba-2" => "https://rdcanais.com/globoba",
+  "Globo-Ba-3" => "https://rdcanais.com/globoba",
   
     "Globo-nsdt" => "https://redecanais.cafe/player3/ch.php?canal=bobonordeste",
- "Globo-nsdt-2" => "https://rdcanais.top/globope",
- "Globo-nsdt-3" => "https://rdcanais.top/globope",
+ "Globo-nsdt-2" => "https://rdcanais.com/globope",
+ "Globo-nsdt-3" => "https://rdcanais.com/globope",
   
        
  #ANIMES
@@ -87,14 +87,14 @@ return array(
   "cnnbrasil-2" => "https://embedtv.org/cnnbrasil/",
   "cnnbrasil-3" => "https://megacanaisonline.space/tv2.php?canal=https://video01.soultv.com.br/cnnbrasil/cnnbrasil/playlist.m3u8",
     "cnnbrasil-4" => "https://playertv.net/e/?v=cnn",
-    "cnnbrasil-5" => "https://rdcanais.top/cnnbrasil",
+    "cnnbrasil-5" => "https://rdcanais.com/cnnbrasil",
   
   "Band" => "https://redecanais.cafe/player3/ch.php?canal=band",  
   "Band-2" => "https://nossoplayeronlinehd.site/tv/band",
   "Band-3" => "https://www2.embedtv.best/Band",
   "Band-4" => "https://www2.embedtv.best/Band",
   "Band-5" => "https://playertv.net/e/?v=band",
-  "Band-6" => "https://rdcanais.top/embed/?id=band",
+  "Band-6" => "https://rdcanais.com/embed/?id=band",
   "Band-7" => "https://www2.embedtv.best/Band",
   "Band-8" => "https://www2.embedtv.best/Band",
   "Band-9" => "https://www2.embedtv.best/Band",
@@ -108,9 +108,9 @@ return array(
   "Sbt-2" => "https://youtube-player.sbt.com.br/?videoID=ABVQXgr2LW4&t=0&adunit=/1011235/SBT_Videos/Especiais/SBT_Live/video", 
     "Sbt-3" => "https://youtube-player.sbt.com.br/?videoID=ABVQXgr2LW4&t=0&adunit=/1011235/SBT_Videos/Especiais/SBT_Live/video",
     "Sbt-4" => "https://nossoplayeronlinehd.site/tv/sbt",
-    "Sbt-5" => "https://rdcanais.top/sbt",
+    "Sbt-5" => "https://rdcanais.com/sbt",
     "Sbt-6" => "https://playertv.net/e/?v=sbtAlt",
-    "Sbt-7" => "https://rdcanais.top/sbt",
+    "Sbt-7" => "https://rdcanais.com/sbt",
     "Sbt-8" => "https://youtube-player.sbt.com.br/?videoID=ABVQXgr2LW4&t=0&adunit=/1011235/SBT_Videos/Especiais/SBT_Live/video",
     "Sbt-9" => "https://youtube-player.sbt.com.br/?videoID=lb6apP9TwlM&t=0&adunit=/1011235/SBT_Videos/Especiais/SBT_Live/video",
   
@@ -119,33 +119,33 @@ return array(
     "RecordTV-3" => "https://playertv.net/e/?v=recordSP",
     "RecordTV-4" => "https://www2.embedtv.best/record",
     "RecordTV-5" => "https://nossoplayeronlinehd.site/tv/record",
-    "RecordTV-6" => "https://rdcanais.top/record",
+    "RecordTV-6" => "https://rdcanais.com/record",
     
     
     
           "RedeTV" => "https://redecanais.cafe/player3/ch.php?canal=redetv",  
   "RedeTV-2" => "https://geo.dailymotion.com/player/xgrus.html?video=kYe5OYErhldJ75Azib2",
-    "RedeTV-3" => "https://rdcanais.top/redetv",
+    "RedeTV-3" => "https://rdcanais.com/redetv",
     "RedeTV-4" => "https://embedflix.gold/tv/player.php?id=rede-tv",
     
               "TVGazeta" => "https://www.dailymotion.com/embed/video/x8ttlxm",  
   "TVGazeta-2" => "https://www.dailymotion.com/embed/video/x8ttlxm",
     "TVGazeta-3" => "https://www.dailymotion.com/embed/video/x8ttlxm",
     "TVGazeta-4" => "https://www.dailymotion.com/embed/video/x8ttlxm",
-    "TVGazeta-5" => "https://rdcanais.top/embed/?id=gazeta",
+    "TVGazeta-5" => "https://rdcanais.com/embed/?id=gazeta",
     
     "TVBrasil" => "https://megacanaisonline.space/tv2.php?canal=https://tvbrasil-stream.ebc.com.br/index.m3u8",  
   "TVBrasil-2" => "https://aovivo.ebc.com.br/embed-tvbrasil.html?v=20230211",
     "TVBrasil-3" => "https://aovivo.ebc.com.br/embed-tvbrasil.html?v=20230211",
-    "TVBrasil-4" => "https://rdcanais.top/tvbrasil",
+    "TVBrasil-4" => "https://rdcanais.com/tvbrasil",
     
     
     
     
                   "CancaoNova" => "https://redecanais.cafe/player3/ch.php?canal=cancaonova",  
-  "CancaoNova-2" => "https://rdcanais.top/embed/?id=cancaonova",
-    "CancaoNova-3" => "https://rdcanais.top/embed/?id=cancaonova",
-     "CancaoNova-4" => "https://rdcanais.top/embed/?id=cancaonova",
+  "CancaoNova-2" => "https://rdcanais.com/embed/?id=cancaonova",
+    "CancaoNova-3" => "https://rdcanais.com/embed/?id=cancaonova",
+     "CancaoNova-4" => "https://rdcanais.com/embed/?id=cancaonova",
   
 
 #MENU ESPORTES
@@ -166,7 +166,7 @@ return array(
    "tnt" => "https://redecanais.cafe/player3/ch.php?canal=tnt", 
   "tnt-2" => "https://www2.embedtv.best/tnt", 
   "tnt-3" => "https://www2.embedtv.best/tnt_hd",
-"tnt-4" => "https://rdcanais.top/tnt",
+"tnt-4" => "https://rdcanais.com/tnt",
   
  "space" => "https://redecanais.cafe/player3/ch.php?canal=space",
  "Sportv" => "https://playertv.net/e/?v=sportv",
@@ -191,46 +191,46 @@ return array(
  "Paulistao3" => "https://futelive.net/tv/paulistao-play-3",
  "TycSports" => "https://megacanaisonline.space/tv2.php?canal=https://d1xm2jznwi5xzj.cloudfront.net/out/v1/34e0da501a8c4489b713809eb08a9bf3/index_14.m3u8",
  "hbomax" => "https://redecanais.cafe/player3/ch.php?canal=hbomax1",
- "hbomax-2" => "https://rdcanais.top/max",
- "hbomax-3" => "https://rdcanais.top/max",
- "hbomax4" => "https://rdcanais.top/max",
+ "hbomax-2" => "https://rdcanais.com/max",
+ "hbomax-3" => "https://rdcanais.com/max",
+ "hbomax4" => "https://rdcanais.com/max",
  
  "hbomax2" => "https://redecanais.cafe/player3/ch.php?canal=hbomax2",
- "hbomax2-2" => "https://rdcanais.top/max2",
- "hbomax2-3" => "https://rdcanais.top/max2",
- "hbomax2-4" => "https://rdcanais.top/max2",
+ "hbomax2-2" => "https://rdcanais.com/max2",
+ "hbomax2-3" => "https://rdcanais.com/max2",
+ "hbomax2-4" => "https://rdcanais.com/max2",
 
  "hbomax3" => "https://redecanais.cafe/player3/ch.php?canal=hbomax3",
- "hbomax3-2" => "https://rdcanais.top/max3",
- "hbomax3-3" => "https://rdcanais.top/max3",
- "hbomax3-3" => "https://rdcanais.top/max3",
+ "hbomax3-2" => "https://rdcanais.com/max3",
+ "hbomax3-3" => "https://rdcanais.com/max3",
+ "hbomax3-3" => "https://rdcanais.com/max3",
  
  "Paulistao3" => "https://futelive.net/tv/hbo-max-5",
  "ufc-fight-pass" => "https://playertv.net/e/?v=ufc",
  
  "Paramount" => "https://redecanais.cafe/player3/ch.php?canal=paramountplus1",
- "Paramount-2" => "https://rdcanais.top/embed/?id=paramountplus",
- "Paramount-3" => "https://rdcanais.top/embed/?id=paramountplus",
+ "Paramount-2" => "https://rdcanais.com/embed/?id=paramountplus",
+ "Paramount-3" => "https://rdcanais.com/embed/?id=paramountplus",
  "Paramount-4" => "https://www2.embedtv.best/paramountplus",
  
   "Paramount2" => "https://redecanais.cafe/player3/ch.php?canal=paramountplus2",
- "Paramount2-2" => "https://rdcanais.top/embed/?id=paramountplus2",
- "Paramount2-3" => "https://rdcanais.top/embed/?id=paramountplus2",
- "Paramount2-4" => "https://rdcanais.top/embed/?id=paramountplus2",
+ "Paramount2-2" => "https://rdcanais.com/embed/?id=paramountplus2",
+ "Paramount2-3" => "https://rdcanais.com/embed/?id=paramountplus2",
+ "Paramount2-4" => "https://rdcanais.com/embed/?id=paramountplus2",
  
    "Paramount3" => "https://redecanais.cafe/player3/ch.php?canal=paramountplus3",
- "Paramount3-2" => "https://rdcanais.top/embed/?id=paramountplus3",
- "Paramount3-3" => "https://rdcanais.top/embed/?id=paramountplus3",
- "Paramount3-4" => "https://rdcanais.top/embed/?id=paramountplus3",
+ "Paramount3-2" => "https://rdcanais.com/embed/?id=paramountplus3",
+ "Paramount3-3" => "https://rdcanais.com/embed/?id=paramountplus3",
+ "Paramount3-4" => "https://rdcanais.com/embed/?id=paramountplus3",
  
  "Paramount4" => "https://redecanais.cafe/player3/ch.php?canal=paramountplus4",
- "Paramount4-2" => "https://rdcanais.top/embed/?id=paramountplus4",
- "Paramount4-3" => "https://rdcanais.top/embed/?id=paramountplus4",
- "Paramount4-4" => "https://rdcanais.top/embed/?id=paramountplus4",
+ "Paramount4-2" => "https://rdcanais.com/embed/?id=paramountplus4",
+ "Paramount4-3" => "https://rdcanais.com/embed/?id=paramountplus4",
+ "Paramount4-4" => "https://rdcanais.com/embed/?id=paramountplus4",
  
- "vixplus" => "https://rdcanais.top/vixplus/",
- "ElevenSports-Eventos" => "https://rdcanais.top/eleven/",
- "fsports" => "https://rdcanais.top/fsports/",
+ "vixplus" => "https://rdcanais.com/vixplus/",
+ "ElevenSports-Eventos" => "https://rdcanais.com/eleven/",
+ "fsports" => "https://rdcanais.com/fsports/",
 
  "Sportv-pt" => "https://sportsonline.click/channels/pt/sporttv1.php",
  "Sportv-pt2" => "https://sportsonline.click/channels/pt/sporttv2.php",
@@ -259,53 +259,53 @@ return array(
    "ufcfigthpass-5" => "https://www2.embedtv.best/ufcfightpass",
   "ufcfigthpass-6" => "https://embedtv.org/ufcfightpass/",
   "ufcfigthpass-7" => "https://embedtv.org/ufcfightpass/",
-  "ufcfigthpass-8" => "https://rdcanais.top/embed/?id=ufcfightpass",
+  "ufcfigthpass-8" => "https://rdcanais.com/embed/?id=ufcfightpass",
   
  "PrimeVideo" => "https://redecanais.cafe/player3/ch.php?canal=primevideo1",
- "PrimeVideo-2" => "https://rdcanais.top/embed/?id=primevideo",
- "PrimeVideo-3" => "https://rdcanais.top/embed/?id=primevideo", 
- "PrimeVideo-4" => "https://rdcanais.top/embed/?id=primevideo", 
+ "PrimeVideo-2" => "https://rdcanais.com/embed/?id=primevideo",
+ "PrimeVideo-3" => "https://rdcanais.com/embed/?id=primevideo", 
+ "PrimeVideo-4" => "https://rdcanais.com/embed/?id=primevideo", 
 
  "PrimeVideo2" => "https://redecanais.cafe/player3/ch.php?canal=primevideo2",
- "PrimeVideo2-2" => "https://rdcanais.top/embed/?id=primevideo2",
- "PrimeVideo2-3" => "https://rdcanais.top/embed/?id=primevideo2",
- "PrimeVideo2-4" => "https://rdcanais.top/embed/?id=primevideo2",
+ "PrimeVideo2-2" => "https://rdcanais.com/embed/?id=primevideo2",
+ "PrimeVideo2-3" => "https://rdcanais.com/embed/?id=primevideo2",
+ "PrimeVideo2-4" => "https://rdcanais.com/embed/?id=primevideo2",
   
  "PrimeVideo3" => "https://redecanais.cafe/player3/ch.php?canal=primevideo3",
- "PrimeVideo3-2" => "https://rdcanais.top/embed/?id=primevideo3",
- "PrimeVideo3-3" => "https://rdcanais.top/embed/?id=primevideo3",
-  "PrimeVideo3-4" => "https://rdcanais.top/embed/?id=primevideo3",
+ "PrimeVideo3-2" => "https://rdcanais.com/embed/?id=primevideo3",
+ "PrimeVideo3-3" => "https://rdcanais.com/embed/?id=primevideo3",
+  "PrimeVideo3-4" => "https://rdcanais.com/embed/?id=primevideo3",
 
  "PrimeVideo4" => "https://redecanais.cafe/player3/ch.php?canal=primevideo4",
- "PrimeVideo4-2" => "https://rdcanais.top/embed/?id=primevideo4",
- "PrimeVideo4-3" => "https://rdcanais.top/embed/?id=primevideo4",
-  "PrimeVideo4-4" => "https://rdcanais.top/embed/?id=primevideo4",
+ "PrimeVideo4-2" => "https://rdcanais.com/embed/?id=primevideo4",
+ "PrimeVideo4-3" => "https://rdcanais.com/embed/?id=primevideo4",
+  "PrimeVideo4-4" => "https://rdcanais.com/embed/?id=primevideo4",
  
-  "PrimeVideo5" => "https://rdcanais.top/embed/?id=primevideo5",
- "PrimeVideo6" => "https://rdcanais.top/embed/?id=primevideo6",
- "PrimeVideo7" => "https://rdcanais.top/embed/?id=primevideo7",
-  "PrimeVideo8" => "https://rdcanais.top/embed/?id=primevideo8",
+  "PrimeVideo5" => "https://rdcanais.com/embed/?id=primevideo5",
+ "PrimeVideo6" => "https://rdcanais.com/embed/?id=primevideo6",
+ "PrimeVideo7" => "https://rdcanais.com/embed/?id=primevideo7",
+  "PrimeVideo8" => "https://rdcanais.com/embed/?id=primevideo8",
  
    "Sportv" => "https://redecanais.cafe/player3/ch.php?canal=sportv1",
  "Sportv-2" => "https://www2.embedtv.best/sportv",
  "Sportv-3" => "https://nossoplayeronlinehd.site/tv/sportv",
  "Sportv-4" => "https://www2.embedtv.best/sportv",
- "Sportv-5" => "https://rdcanais.top/sportv",
- "Sportv-6" => "https://rdcanais.top/sportv",
+ "Sportv-5" => "https://rdcanais.com/sportv",
+ "Sportv-6" => "https://rdcanais.com/sportv",
  
  "Sportv2" => "https://redecanais.cafe/player3/ch.php?canal=sportv2",
  "Sportv2-2" => "https://www2.embedtv.best/sportv2",
  "Sportv2-3" => "https://nossoplayeronlinehd.site/tv/sportv2",
  "Sportv2-4" => "https://www2.embedtv.best/sportv2",
  "Sportv2-5" => "https://nossoplayeronlinehd.site/tv/sportv2",
- "Sportv2-6" => "https://rdcanais.top/sportv2",
+ "Sportv2-6" => "https://rdcanais.com/sportv2",
  
  "Sportv3" => "https://redecanais.cafe/player3/ch.php?canal=sportv3",
  "Sportv3-2" => "https://www2.embedtv.best/sportv3",
  "Sportv3-3" => "https://nossoplayeronlinehd.site/tv/sportv3",
  "Sportv3-4" => "https://www2.embedtv.best/sportv3",
  "Sportv3-5" => "https://www2.embedtv.best/sportv3",
- "Sportv3-6" => "https://rdcanais.top/sportv3",
+ "Sportv3-6" => "https://rdcanais.com/sportv3",
  
  "FoxSports-2" => "https://daddyhd.com/stream/stream-929.php",
  "FoxSports-3" => "https://daddyhd.com/stream/stream-929.php",
@@ -317,7 +317,7 @@ return array(
  "Premiere5-3" => "https://playertv.net/e/?v=premiere5",
  "Premiere5-4" => "https://embedflix.gold/tv/player.php?id=premiere-5",
  "Premiere5-5" => "https://nossoplayeronlinehd.site/tv/premiere5",
- "Premiere5-6" => "https://rdcanais.top/premiere5",
+ "Premiere5-6" => "https://rdcanais.com/premiere5",
  
  
    "Premiere6" => "https://redecanais.cafe/player3/ch.php?canal=premiere6",
@@ -325,14 +325,14 @@ return array(
  "Premiere6-3" => "https://playertv.net/e/?v=premiere6",
  "Premiere6-4" => "https://embedflix.gold/tv/player.php?id=premiere-6",
  "Premiere6-5" => "https://nossoplayeronlinehd.site/tv/premiere6",
- "Premiere6-6" => "https://rdcanais.top/premiere6",
+ "Premiere6-6" => "https://rdcanais.com/premiere6",
  
  "Premiere7" => "https://redecanais.cafe/player3/ch.php?canal=premiere7",
  "Premiere7-2" => "https://embedtv.org/premiere7/",
  "Premiere7-3" => "https://www2.embedtv.best/premiere7",
  "Premiere7-4" => "https://embedflix.gold/tv/player.php?id=premiere-7",
  "Premiere7-5" => "https://nossoplayeronlinehd.site/tv/premiere7",
- "Premiere7-6" => "https://rdcanais.top/embed/?id=premiere7alternativo",
+ "Premiere7-6" => "https://rdcanais.com/embed/?id=premiere7alternativo",
  
  
  "Premiere8" => "https://redecanais.cafe/player3/ch.php?canal=premiere8",
@@ -340,7 +340,7 @@ return array(
  "Premiere8-3" => "https://playertv.net/e/?v=premiere8",
  "Premiere8-4" => "https://embedflix.gold/tv/player.php?id=premiere-8",
  "Premiere8-5" => "https://nossoplayeronlinehd.site/tv/premiere8",
- "Premiere8-6" => "https://rdcanais.top/premiere8",
+ "Premiere8-6" => "https://rdcanais.com/premiere8",
  
  
   "BenficaTV" => "https://sportsonline.click/channels/pt/btv.php",
@@ -355,7 +355,7 @@ return array(
  "MLS-5" => "https://micanaldeportivo.com/canal11.php",
  
  
-   "Cazetv-1" => "https://rdcanais.top/embed/?id=cazetv",
+   "Cazetv-1" => "https://rdcanais.com/embed/?id=cazetv",
  "Cazetv-2" => "https://www2.embedtv.best/caze-tv",
  "Cazetv-3" => "https://www2.embedtv.best/caze-tv-2",
  "Cazetv-4" => "https://www2.embedtv.best/caze-tv-3",
@@ -394,7 +394,7 @@ return array(
      "tnt-sports-2" => "https://www2.embedtv.best/tnt",
        "tnt-sports-3" => "https://www2.embedtv.best/tnt",
          "tnt-sports-4" => "https://embedtv.org/tnt/",
-         "tnt-sports-5" => "https://rdcanais.top/tnt",
+         "tnt-sports-5" => "https://rdcanais.com/tnt",
  
  
    "NossoFutebolPlus" => "https://redecanais.cafe/player3/ch.php?canal=nossofutebol",
@@ -403,7 +403,7 @@ return array(
   "NossoFutebolPlus-4" => "https://embedtv.org/nossofutebol/",
  "NossoFutebolPlus-5" => "https://embedtv.org/nossofutebol/",
    "NossoFutebolPlus-6" => "https://playertv.net/e/?v=nosso",
-  "NossoFutebolPlus-7" => "https://rdcanais.top/embed/?id=nossofutebol",
+  "NossoFutebolPlus-7" => "https://rdcanais.com/embed/?id=nossofutebol",
  "NossoFutebolPlus-8" => "https://www2.embedtv.best/nossofutebol",
  
   "Bandsports" => "https://redecanais.cafe/player3/ch.php?canal=bandsports",
@@ -411,14 +411,14 @@ return array(
  "Bandsports-3" => "https://www2.embedtv.best/band_sports_hd",
  "Bandsports-4" => "https://embedflix.gold/tv/player.php?id=band-sports",
  "Bandsports-5" => "https://nossoplayeronlinehd.site/tv/bandsports",
- "Bandsports-6" => "https://rdcanais.top/bandsports",
+ "Bandsports-6" => "https://rdcanais.com/bandsports",
  
  "Combate" => "https://redecanais.cafe/player3/ch.php?canal=combate",
  "Combate-2" => "https://embedtv.org/combate/",
  "Combate-3" => "https://www2.embedtv.best/combate_hd",
  "Combate-4" => "https://embedtv.org/combate/",
  "Combate-5" => "https://nossoplayeronlinehd.site/tv/combate",
-  "Combate-6" => "https://rdcanais.top/combate",
+  "Combate-6" => "https://rdcanais.com/combate",
  
   "FoxSports" => "https://redecanais.cafe/player3/ch.php?canal=foxsports2",
 
@@ -426,22 +426,22 @@ return array(
      "EspnExtra" => "https://redecanais.cafe/player3/ch.php?canal=espnextra",
   "EspnExtra-2" => "https://playertv.net/e/?v=espn-extra",
   "EspnExtra-3" => "https://embedflix.gold/tv/espn-extra",
-   "EspnExtra-4" => "https://rdcanais.top/embed/?id=espnextra",
-   "EspnExtra-5" => "https://rdcanais.top/embed/?id=espnextra",
+   "EspnExtra-4" => "https://rdcanais.com/embed/?id=espnextra",
+   "EspnExtra-5" => "https://rdcanais.com/embed/?id=espnextra",
   
   "Espn" => "https://redecanais.cafe/player3/ch.php?canal=espn",
   "Espn-2" => "https://embedtv.org/espn/",
   "Espn-3" => "https://www2.embedtv.best/espn_hd",
   "Espn-4" => "https://nossoplayeronlinehd.site/tv/espn",
   "Espn5" => "https://playertv.net/e/?v=espn",
-  "Espn6" => "https://rdcanais.top/espn",
+  "Espn6" => "https://rdcanais.com/espn",
   
   "Espn2" => "https://redecanais.cafe/player3/ch.php?canal=espn2",
   "Espn2-2" => "https://embedtv.org/espn2/",
   "Espn2-3" => "https://www2.embedtv.best/espn_2_hd",
   "Espn2-4" => "https://embedflix.gold/tv/player.php?id=espn-2",
   "Espn2-5" => "https://playertv.net/e/?v=espn2",
-  "Espn2-6" => "https://rdcanais.top/espn2",
+  "Espn2-6" => "https://rdcanais.com/espn2",
   
   
   "Espn3" => "https://redecanais.cafe/player3/ch.php?canal=espn3",
@@ -449,24 +449,24 @@ return array(
   "Espn3-3" => "http:/www2.embedtv.best/espn_3_hd",
   "Espn3-4" => "https://embedflix.gold/tv/player.php?id=espn-3",
   "Espn3-5" => "https://playertv.net/e/?v=espn3",
-  "Espn3-6" => "https://rdcanais.top/espn3",
+  "Espn3-6" => "https://rdcanais.com/espn3",
   
   "Espn4" => "https://redecanais.cafe/player3/ch.php?canal=espn4",
   "Espn4-2" => "https://embedtv.org/espn4/",
   "Espn4-3" => "https://www2.embedtv.best/espn_4_hd",
   "Espn4-4" => "https://embedflix.gold/tv/player.php?id=espn-4",
   "Espn4-5" => "https://playertv.net/e/?v=espn4",
-  "Espn4-6" => "https://rdcanais.top/espn4",
+  "Espn4-6" => "https://rdcanais.com/espn4",
   
     "Espn-5" => "https://redecanais.cafe/player3/ch.php?canal=espn5",
   "Espn5-2" => "https://embedtv.org/espn5/",
   "Esspn5-3" => "https://playertv.net/e/?v=espn5Alt",
-  "Esspn5-4" => "https://rdcanais.top/espn5",
+  "Esspn5-4" => "https://rdcanais.com/espn5",
   
       "Espn6-6" => "https://redecanais.cafe/player3/ch.php?canal=espn6",
   "Espn6-2" => "https://www2.embedtv.best/espn6",
   "Essssspn6-3" => "https://playertv.net/e/?v=espn6Alt",
-  "Essssspn6-4" => "https://rdcanais.top/espn6",
+  "Essssspn6-4" => "https://rdcanais.com/espn6",
   
     "Nbaleague1" => "https://canaisnatv.me/ply.php?link=https://streambtw.live/iframe/nba1.php",
   "Nbaleague1-2" => "https://canaisnatv.me/ply.php?link=https://streambtw.live/iframe/nba2.php",
@@ -490,7 +490,7 @@ return array(
   "Premiere-3" => "https://playertv.net/e/?v=premiere",
   "Premiere-4" => "https://embedflix.gold/tv/prfc-1-hd",
    "Premiere-5" => "https://www2.embedtv.best/premiere",
-   "Premiere-6" => "https://rdcanais.top/premiereclubes",
+   "Premiere-6" => "https://rdcanais.com/premiereclubes",
    
 
   "Premiere2" => "https://redecanais.cafe/player3/ch.php?canal=premiere2",
@@ -498,13 +498,13 @@ return array(
   "Premiere2-3" => "https://playertv.net/e/?v=premiere2",
   "Premiere2-4" => "https://embedflix.gold/tv/player.php?id=premiere-2",
    "Premiere2-5" => "https://nossoplayeronlinehd.site/tv/premiere2",
-   "Premiere2-6" => "https://rdcanais.top/premiere2",
+   "Premiere2-6" => "https://rdcanais.com/premiere2",
   "Premiere3" => "https://redecanais.cafe/player3/ch.php?canal=premiere3",
   "Premiere3-2" => "https://www2.embedtv.best/premiere3",
   "Premiere3-3" => "https://playertv.net/e/?v=premiere3",
   "Premiere3-4" => "https://embedflix.gold/tv/player.php?id=premiere-3",
   "Premiere3-5" => "https://nossoplayeronlinehd.site/tv/premiere3",
-  "Premiere3-6" => "https://rdcanais.top/premiere3",
+  "Premiere3-6" => "https://rdcanais.com/premiere3",
   
   
   "Premiere4" => "https://redecanais.cafe/player3/ch.php?canal=premiere4",
@@ -512,7 +512,7 @@ return array(
   "Premiere4-3" => "https://playertv.net/e/?v=premiere4", 
   "Premiere4-4" => "https://embedflix.gold/tv/player.php?id=premiere-4",
   "Premiere4-5" => "https://nossoplayeronlinehd.site/tv/premiere4", 
-  "Premiere4-6" => "https://rdcanais.top/premiere4",
+  "Premiere4-6" => "https://rdcanais.com/premiere4",
  
  
  
@@ -542,9 +542,9 @@ return array(
  "nba-1" => "https://playertv.net/e/?v=nba",
 "nba-2" => "https://embedflix.gold/tv/nba-hd",
  
-  "playsports" => "https://rdcanais.top/embed/?id=playsports",
- "playsports-2" => "https://rdcanais.top/embed/?id=playsports2",
- "playsports-3" => "https://rdcanais.top/embed/?id=playsports3",
+  "playsports" => "https://rdcanais.com/embed/?id=playsports",
+ "playsports-2" => "https://rdcanais.com/embed/?id=playsports2",
+ "playsports-3" => "https://rdcanais.com/embed/?id=playsports3",
  
   "SScsport" => "https://canaisnatv.pro/Pxplay2.php?id=SSC1",
  "SScsport-2" => "https://canaisnatv.pro/Pxplay2.php?id=SSC2",
@@ -588,13 +588,13 @@ return array(
   "GloboNews-2" => "https://www2.embedtv.best/globo-news",
     "GloboNews-3" => "https://playertv.net/e/?v=globoNews",
         "GloboNews-4" => "https://www2.embedtv.best/globonews",
-"GloboNews-5" => "https://rdcanais.top/globonews",
+"GloboNews-5" => "https://rdcanais.com/globonews",
     
      "BandNews" => "https://redecanais.cafe/player3/ch.php?canal=bandnews",
      "BandNews-2" => "https://www2.embedtv.best/bandnews",
      "BandNews-3" => "https://embedtvonline.com/bandnews/",
      "BandNews-4" => "https://embedflix.gold/tv/player.php?id=band-news",
-     "BandNews-5" => "https://rdcanais.top/bandnews",
+     "BandNews-5" => "https://rdcanais.com/bandnews",
   
        "RecordNews" => "https://redecanais.cafe/player3/ch.php?canal=recordnews",
      "RecordNews-2" => "https://playertv.net/e/?v=record-news",
@@ -612,7 +612,7 @@ return array(
  "RecordNewss-2" => "https://www2.embedtv.best/record-news",
  "RecordNewss-3" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=5431",
  "RecordNewss-4" => "https://www2.embedtv.best/record-news",
- "RecordNewss-5" => "https://rdcanais.top/embed/?id=recordnews",
+ "RecordNewss-5" => "https://rdcanais.com/embed/?id=recordnews",
      
             "cbsnews" => "https://megacanaisonline.space/tv2.php?canal=https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master_9.m3u8",
      "cbsnews-2" => "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master_9.m3u8",
@@ -643,7 +643,7 @@ return array(
 "history-2" => "https://www2.embedtv.best/history",
 "history-3" => "https://www2.embedtv.best/history",
 "history-4" => "https://www2.embedtv.best/history",
-"history-5" => "https://rdcanais.top/history",
+"history-5" => "https://rdcanais.com/history",
 
 
 
@@ -651,32 +651,32 @@ return array(
 "discoveryTurbo-2" => "https://www2.embedtv.best/discoveryturbo",
  "discoveryTurbo-3" => "https://www2.embedtv.best/discoveryturbo",
  "discoveryTurbo-4" => "https://www2.embedtv.best/discoveryturbo",
- "discoveryTurbo-5" => "https://rdcanais.top/discoveryturbo",
+ "discoveryTurbo-5" => "https://rdcanais.com/discoveryturbo",
  
 "discoveryChannel-1" => "https://redecanais.cafe/player3/ch.php?canal=discovery",
 "discoveryChannel-2" => "https://www2.embedtv.best/discovery_channel_hd",
  "discoveryChannel-3" => "https://www2.embedtv.best/discovery_channel_hd",
   "discoveryChannel-4" => "https://embedflix.gold/tv/discovery-channel-hd",
- "discoveryChannel-5" => "https://rdcanais.top/discoverychannel",
+ "discoveryChannel-5" => "https://rdcanais.com/discoverychannel",
 
  "discoveryhomehealh" => "https://redecanais.cafe/player3/ch.php?canal=discoveryhomeihealth",
  "discoveryhomehealh-2" => "https://www2.embedtv.best/discoveryhh",
  "discoveryhomehealh-3" => "https://www2.embedtv.best/discoveryhh",
   "discoveryhomehealh-4" => "https://embedtv.org/discoveryhh/",
-  "discoveryhomehealh-5" => "https://rdcanais.top/discoveryheh",
+  "discoveryhomehealh-5" => "https://rdcanais.com/discoveryheh",
   
  "discoveryWold" => "https://redecanais.cafe/player3/ch.php?canal=discoveryworld",
  "discoveryWold-2" => "https://www2.embedtv.best/discoveryword",
  "discoveryWold-3" => "https://embedflix.gold/tv/discovery-world",
  "discoveryWold-4" => "https://www2.embedtv.best/discoveryword",
- "discoveryWold-5" => "https://rdcanais.top/discoveryworld",
+ "discoveryWold-5" => "https://rdcanais.com/discoveryworld",
 
 
 
 "hgtv-1" => "https://redecanais.cafe/player3/ch.php?canal=hgtv",
 "hgtv-2" => "https://www2.embedtv.best/hgtv_hd",
 "hgtv-3" => "https://www2.embedtv.best/hgtv_hd",
-"hgtv-4" => "https://rdcanais.top/hgtv",
+"hgtv-4" => "https://rdcanais.com/hgtv",
 
 
 
@@ -684,25 +684,25 @@ return array(
 "AnimalPlanet-2" => "https://www2.embedtv.best/animalplanet",
 "AnimalPlanet-3" => "https://www2.embedtv.best/animalplanet",
 "AnimalPlanet-4" => "https://www2.embedtv.best/animalplanet",
-"AnimalPlanet-5" => "https://rdcanais.top/animalplanet",
+"AnimalPlanet-5" => "https://rdcanais.com/animalplanet",
  
 "DiscoveryScience-1" => "https://redecanais.cafe/player3/ch.php?canal=discoverysience",
 "DiscoveryScience-2" => "https://www2.embedtv.best/discoveryscience",
  "DiscoveryScience-3" => "https://www2.embedtv.best/discoveryscience",
   "DiscoveryScience-4" => "https://embedtv.org/discoveryscience/",
-"DiscoveryScience-5" => "https://rdcanais.top/discoveryscience",
+"DiscoveryScience-5" => "https://rdcanais.com/discoveryscience",
 
 "discoverytheater-1" => "https://redecanais.cafe/player3/ch.php?canal=discoverytheater",
 "discoverytheater-2" => "https://www2.embedtv.best/discoverytheather",
 "discoverytheater-3" => "https://www2.embedtv.best/discoverytheather",
 "discoverytheater-4" => "https://www2.embedtv.best/discoverytheather",
-"discoverytheater-5" => "https://rdcanais.top/discoverytheater",
+"discoverytheater-5" => "https://rdcanais.com/discoverytheater",
 
 "NationalGeographic-1" => "https://redecanais.cafe/player3/ch.php?canal=natgeo",
-  "NationalGeographic-2" => "https://rdcanais.top/embed/?id=nationalgeographic", 
+  "NationalGeographic-2" => "https://rdcanais.com/embed/?id=nationalgeographic", 
     "NationalGeographic-3" => "https://embedflix.gold/tv/player.php?id=national-geographic",
-  "NationalGeographic-4" => "https://rdcanais.top/embed/?id=nationalgeographic",
-"NationalGeographic-5" => "https://rdcanais.top/embed/?id=nationalgeographic",
+  "NationalGeographic-4" => "https://rdcanais.com/embed/?id=nationalgeographic",
+"NationalGeographic-5" => "https://rdcanais.com/embed/?id=nationalgeographic",
  
 
 "vivat" => "https://redecanais.cafe/player3/ch.php?canal=globoplaynovelas",
@@ -710,7 +710,7 @@ return array(
 "vivat-3" => "https://www2.embedtv.best/viva",
 "vivat-4" => "https://nossoplayeronlinehd.site/tv/viva",
 "vivat-5" => "https://nossoplayeronlinehd.site/tv/viva",
-"vivat-6" => "https://rdcanais.top/globoplaynovelas",
+"vivat-6" => "https://rdcanais.com/globoplaynovelas",
 
 
 
@@ -719,7 +719,7 @@ return array(
 "history2-2" => "https://www2.embedtv.best/history2",
 "history2-3" => "https://www2.embedtv.best/history2",
 "history2-4" => "https://embedflix.gold/tv/h2",
-"history2-4" => "https://rdcanais.top/history2",
+"history2-4" => "https://rdcanais.com/history2",
 
 
  "Filmesart-1" => "https://megacanaisonline.space/tv2.php?canal=https://origin-07.nxplay.com.br/Film_Arts_Brasil/video.m3u8",
@@ -736,23 +736,23 @@ return array(
   "Cartoonito" => "https://redecanais.cafe/player3/ch.php?canal=cartoonito",
   "Cartoonito-2" => "https://www2.embedtv.best/cartoonito", 
   "Cartoonito-3" => "https://playertv.net/e/?v=cartoonito", 
-  "Cartoonito-4" => "https://rdcanais.top/embed/?id=cartoonito",
+  "Cartoonito-4" => "https://rdcanais.com/embed/?id=cartoonito",
  
   "tntseries" => "https://redecanais.cafe/player3/ch.php?canal=tntseries",
   "tntseries-2" => "https://nossoplayeronlinehd.site/tv/tntseries",
   "tntseries-3" => "https://www2.embedtv.best/tnt_series_hd", 
-   "tntseries-4" => "https://rdcanais.top/tntseries", 
+   "tntseries-4" => "https://rdcanais.com/tntseries", 
 
    "sony" => "https://redecanais.cafe/player3/ch.php?canal=sony",
   "sony-2" => "https://www2.embedtv.best/sonychannel",
   "sony-3" => "https://embedflix.gold/tv/player.php?id=sony-channel",
-"sony-4" => "https://rdcanais.top/sonychannel",
+"sony-4" => "https://rdcanais.com/sonychannel",
 
  "Usa-Network" => "https://redecanais.cafe/player3/ch.php?canal=usa",
    "Usa-Network-2" => "https://embedtv.org/usa/",
  "Usa-Network-3" => "https://embedtv.org/usa/",
   "Usa-Network-4" => "https://www2.embedtv.best/usa",
-    "Usa-Network-5" => "https://rdcanais.top/embed/?id=usa",
+    "Usa-Network-5" => "https://rdcanais.com/embed/?id=usa",
  
  #MENU REALITY SHOWS 
  "afazenda" => "https://www.redecanaisonline.tech/v.php?id=AFAZENDA14",
@@ -885,31 +885,31 @@ return array(
 "tvratimbum-1" => "https://playertv.net/e/?v=raTimBum",
 "tvratimbum-2" => "https://playertv.net/e/?v=raTimBum",
 "tvratimbum-3" => "https://playertv.net/e/?v=raTimBum",
-"tvratimbum-4" => "https://rdcanais.top/embed/?id=ratimbum",
+"tvratimbum-4" => "https://rdcanais.com/embed/?id=ratimbum",
 
   "globinho-1" => "https://redecanais.cafe/player3/ch.php?canal=gloobinho",
   "globinho-2" => "https://www2.embedtv.best/gloobinho",
   "globinho-3" => "https://playertv.net/e/?v=gloobinho",
-  "globinho-4" => "https://rdcanais.top/gloobinho",
+  "globinho-4" => "https://rdcanais.com/gloobinho",
 
-"Tooncast-1" => "https://rdcanais.top/tooncast",
-"Tooncast-2" => "https://rdcanais.top/tooncast",
-"Tooncast-3" => "https://rdcanais.top/tooncast",
+"Tooncast-1" => "https://rdcanais.com/tooncast",
+"Tooncast-2" => "https://rdcanais.com/tooncast",
+"Tooncast-3" => "https://rdcanais.com/tooncast",
 "Tooncast-4" => "https://playertv.net/e/?v=tooncast",
 
 "comedycentral" => "https://redecanais.cafe/player3/ch.php?canal=comedycentral",
- "comedycentral-2" => "https://rdcanais.top/embed/?id=comedycentral",
+ "comedycentral-2" => "https://rdcanais.com/embed/?id=comedycentral",
  "comedycentral-3" => "https://playertv.net/e/?v=comedyCentral",
-"comedycentral-4" => "https://rdcanais.top/embed/?id=comedycentral",
+"comedycentral-4" => "https://rdcanais.com/embed/?id=comedycentral",
  
  "FoodNetwoork" => "https://redecanais.cafe/player3/ch.php?canal=foodnetwork",
  "FoodNetwoork-2" => "https://playertv.net/e/?v=food-network",
- "FoodNetwoork-3" => "https://rdcanais.top/embed/?id=foodnetwork",
+ "FoodNetwoork-3" => "https://rdcanais.com/embed/?id=foodnetwork",
  
   "LifeTime" => "https://redecanais.cafe/player3/ch.php?canal=lifetime",
  "LifeTime-2" => "https://embedtv.org/lifetime/",
  "LifeTime-3" => "https://playertv.net/e/?v=lifetime",
-  "LifeTime-4" => "https://rdcanais.top/embed/?id=lifetime",
+  "LifeTime-4" => "https://rdcanais.com/embed/?id=lifetime",
 
  "Halloanime-1" => "https://megacanaisonline.space/tv2.php?canal=https://origin-05.nxplay.com.br/HALLOANIME/mono.m3u8",
 "Halloanime-2" => "https://megacanaisonline.space/tv2.php?canal=https://origin-05.nxplay.com.br/HALLOANIME/video.m3u8
@@ -934,7 +934,7 @@ return array(
       
       "RedeGospel-3" => "https://www-redegospel-tv-br.filesusr.com/html/d978d9_126e6dc4ff0427b95b097166b54c81d1.html",
       
-      "RedeGospel-4" => "https://rdcanais.top/embed/?id=redegospel",
+      "RedeGospel-4" => "https://rdcanais.com/embed/?id=redegospel",
       
       
             "TVAparecida" => "https://megacanaisonline.space/tv2.php?canal=https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/chunklist.m3u8",
@@ -962,7 +962,7 @@ return array(
       
       "TVEvangelizar-3" => "https://megacanaisonline.space/tv2.php?canal=https://tvevangelizar.brasilstream.com.br/hls/tvevangelizar/index.m3u8",
       
-      "TVEvangelizar-4" => "https://rdcanais.top/embed/?id=tvevangelizar",
+      "TVEvangelizar-4" => "https://rdcanais.com/embed/?id=tvevangelizar",
    
    
                      "TVPaiEterno" => "https://megacanaisonline.space/tv2.php?canal=https://video09.logicahost.com.br/paieterno/paieterno/playlist.m3u8",
@@ -984,7 +984,7 @@ return array(
    "tntnovelas" => "https://redecanais.cafe/player3/ch.php?canal=tntnovelas",
   "tntnovelas-2" => "https://www2.embedtv.best/tnt-novelas",
    "tntnovelas-3" => "https://www2.embedtv.best/tnt_novelas_hd",
-  "tntnovelas-4" => "https://rdcanais.top/tntnovelas",
+  "tntnovelas-4" => "https://rdcanais.com/tntnovelas",
   
  #MENU VARIEDADES
    
@@ -1018,7 +1018,7 @@ return array(
   "TVcamera" => "https://megacanaisonline.space/tv2.php?canal=https://stream3.camara.gov.br/tv1/manifest.m3u8",
  "TVcamera-2" => "https://megacanaisonline.space/tv2.php?canal=https://stream3.camara.gov.br/tv1/manifest.m3u8",
   "TVcamera-3" => "https://megacanaisonline.space/tv2.php?canal=https://stream3.camara.gov.br/tv1/manifest.m3u8",
-  "TVcamera-4" => "https://rdcanais.top/embed/?id=tvcamara",
+  "TVcamera-4" => "https://rdcanais.com/embed/?id=tvcamara",
   
    
       
@@ -1034,33 +1034,33 @@ return array(
  "Multishow-3" => "https://www2.embedtv.best/multishow",  
  "Multishow-4" => "https://www2.embedtv.best/multishow",  
  "Multishow-5" => "https://maxsaid04.embedtv.best/multishow",
- "Multishow-6" => "https://rdcanais.top/multishow",
+ "Multishow-6" => "https://rdcanais.com/multishow",
 
  
  "MtvLive" => "https://redecanais.cafe/player3/ch.php?canal=mtvlive",
- "MtvLive-2" => "https://rdcanais.top/embed/?id=mtvlive",
- "MtvLive-3" => "https://rdcanais.top/embed/?id=mtvlive",
+ "MtvLive-2" => "https://rdcanais.com/embed/?id=mtvlive",
+ "MtvLive-3" => "https://rdcanais.com/embed/?id=mtvlive",
   "MtvLive-4" => "https://playertv.org/c/wbr.php?id=mtv-live",
   
   "Mtv" => "https://redecanais.cafe/player3/ch.php?canal=mtv",
  "Mtv-2" => "https://playertv.net/e/?v=mtv",
- "Mtv-3" => "https://rdcanais.top/embed/?id=mtv",
+ "Mtv-3" => "https://rdcanais.com/embed/?id=mtv",
   "Mtv-4" => "https://gdplayer.to/embed/MTV",
 
  "TruTv" => "https://redecanais.cafe/player3/ch.php?canal=trutv",
  "TruTv-2" => "https://redecanais.cafe/player3/ch.php?canal=trutv",
- "TruTv-3" => "https://rdcanais.top/embed/?id=trutv",
+ "TruTv-3" => "https://rdcanais.com/embed/?id=trutv",
  
  
  "Curta" => "https://redecanais.cafe/player3/ch.php?canal=curta",
  "Curta-2" => "https://megacanaisonline.space/tv2.php?canal=https://video01.logicahost.com.br/canalcurta/canalcurta/index.m3u8",
  "Curta-3" => "https://megacanaisonline.space/tv2.php?canal=https://video01.logicahost.com.br/canalcurta/canalcurta/index.m3u8",
- "Curta-4" => "https://rdcanais.top/embed/?id=curta",
+ "Curta-4" => "https://rdcanais.com/embed/?id=curta",
  
    "CartoonNetwork" => "https://redecanais.cafe/player3/ch.php?canal=cartoon",
 "CartoonNetwork-2" => "https://www2.embedtv.best/cartoonnetwork",
  "CartoonNetwork-3" => "https://embedflix.gold/tv/cartoon-network",  
- "CartoonNetwork-4" => "https://rdcanais.top/embed/?id=cartoonnetwork",
+ "CartoonNetwork-4" => "https://rdcanais.com/embed/?id=cartoonnetwork",
  
 
 "Kids-2" => "https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f1214a637c6fd00079c652f/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus",
@@ -1070,30 +1070,30 @@ return array(
   "Nickjr" => "https://redecanais.cafe/player3/ch.php?canal=nickjr",
   "Nickjr-2" => "https://embedtv.org/nickjr/",
    "Nickjr-3" => "https://embedflix.gold/tv/nick-jr",
-   "Nickjr-4" => "https://rdcanais.top/embed/?id=nickjr",
+   "Nickjr-4" => "https://rdcanais.com/embed/?id=nickjr",
    
   "Nick" => "https://redecanais.cafe/player3/ch.php?canal=nick",
   "Nick-2" => "https://embedtv.org/nickelodeon/",
   "Nick-3" => "https://www2.embedtv.best/nickelodeon",
-  "Nick-4" => "https://rdcanais.top/embed/?id=nickelodeon",
+  "Nick-4" => "https://rdcanais.com/embed/?id=nickelodeon",
   
     "Gloob" => "https://redecanais.cafe/player3/ch.php?canal=gloob",
     "Gloob-2" => "https://www2.embedtv.best/gloob",
     "Gloob-3" => "https://www2.embedtv.best/gloob",
     "Gloob-4" => "https://playertv.net/e/?v=gloobAlt",
-    "Gloob-5" => "https://rdcanais.top/gloob",
+    "Gloob-5" => "https://rdcanais.com/gloob",
  
 
 
     "Disney" => "https://redecanais.cafe/player3/ch.php?canal=disney",
     "Disney-2" => "https://embedtv.org/disneychannel/",
     "Disney-3" => "https://embedtv.org/disneychannel/",
-    "Disney-4" => "https://rdcanais.top/embed/?id=disneychannel",
+    "Disney-4" => "https://rdcanais.com/embed/?id=disneychannel",
 
      "DiscoveryKids" => "https://redecanais.cafe/player3/ch.php?canal=discoverykids",
     "DiscoveryKids-2" => "https://embedtv.org/discoverykids/",
         "DiscoveryKids-3" => "https://www2.embedtv.best/discoverykids",
-         "DiscoveryKids-4" => "https://rdcanais.top/embed/?id=discoverykids",
+         "DiscoveryKids-4" => "https://rdcanais.com/embed/?id=discoverykids",
 
 
  "Disneyplus-1" => "https://embedtv.org/disneyplus/",
@@ -1144,19 +1144,19 @@ return array(
  "hbo-2" => "https://www2.embedtv.best/hbo",
  "hbo-3" => "https://nossoplayeronlinehd.site/tv/hbo",
  "hbo-4" => "https://embedflix.gold/tv/player.php?id=hbo",
- "hbo-5" => "https://rdcanais.top/hbo",
+ "hbo-5" => "https://rdcanais.com/hbo",
 
  "hboplus" => "https://redecanais.cafe/player3/ch.php?canal=hboplus",
  "hboplus-2" => "https://nossoplayeronlinehd.site/tv/hboplus",
  "hboplus-3" => "https://www2.embedtv.best/HBO_Plus",
  "hboplus-4" => "https://embedflix.gold/tv/player.php?id=hbo-plus",
- "hboplus-5" => "https://rdcanais.top/hboplus",
+ "hboplus-5" => "https://rdcanais.com/hboplus",
 
   "hbo2" => "https://redecanais.cafe/player3/ch.php?canal=hbo2",
  "hbo2-2" => "https://nossoplayeronlinehd.site/tv/hbo2",
  "hbo2-3" => "https://www2.embedtv.best/hbo_2",
   "hbo2-4" => "https://embedflix.gold/tv/player.php?id=hbo-2",
-  "hbo2-5" => "https://rdcanais.top/hbo2",
+  "hbo2-5" => "https://rdcanais.com/hbo2",
  
  "hbomundi" => "https://redecanais.cafe/player3/ch.php?canal=hbomundi",
  "hbomundi-2" => "https://www2.embedtv.best/hbomundi",
@@ -1167,7 +1167,7 @@ return array(
      "ae" => "https://redecanais.cafe/player3/ch.php?canal=aie",
      "ae-2" => "https://embedtv.org/aee/",
      "ae-3" => "https://www2.embedtv.best/ae",
-       "ae-4" => "https://rdcanais.top/embed/?id=aee",
+       "ae-4" => "https://rdcanais.com/embed/?id=aee",
      "Axn" => "https://redecanais.cafe/player3/ch.php?canal=axn",
      "Axn-2" => "https://www2.embedtv.best/axn",
      "Axn-3" => "https://www2.embedtv.best/axn",
@@ -1179,49 +1179,49 @@ return array(
      "TelecineCult-2" => "https://www2.embedtv.best/Telecine_Cult",
      "TelecineCult-3" => "https://www2.embedtv.best/Telecine_Cult",
      "TelecineCult-4" => "https://embedflix.gold/tv/telecine-cult",
-     "TelecineCult-5" => "https://rdcanais.top/telecinecult",
+     "TelecineCult-5" => "https://rdcanais.com/telecinecult",
      
      "TelecinePipoca" => "https://redecanais.cafe/player3/ch.php?canal=telecinepipoca",
      "TelecinePipoca-2" => "https://nossoplayeronlinehd.site/tv/telecinepipoca",
      "TelecinePipoca-3" => "https://embedflix.gold/tv/telecine-pipoca-hd",
-     "TelecinePipoca-4" => "https://rdcanais.top/telecinepipoca",
+     "TelecinePipoca-4" => "https://rdcanais.com/telecinepipoca",
      
           "TelecinePipoca1" => "https://redecanais.cafe/player3/ch.php?canal=telecinepipoca",
      "TelecinePipoca1-2" => "https://nossoplayeronlinehd.site/tv/telecinecult",
      "TelecinePipoca1-3" => "https://www2.embedtv.best/Telecine_Pipoca",
      "TelecinePipoca1-4" => "https://embedflix.gold/tv/telecine-pipoca-hd",
-     "TelecinePipoca1-5" => "https://rdcanais.top/embed/?id=telecinepipoca",
+     "TelecinePipoca1-5" => "https://rdcanais.com/embed/?id=telecinepipoca",
 
      
      "Telecinefun" => "https://redecanais.cafe/player3/ch.php?canal=telecinefun",
      "Telecinefun-2" => "https://www2.embedtv.best/telecinefun",
      "Telecinefun-3" => "https://nossoplayeronlinehd.site/tv/telecinefun",
      "Telecinefun-4" => "https://embedflix.gold/tv/telecine-fun-hd",
-     "Telecinefun-5" => "https://rdcanais.top/telecinefun",
+     "Telecinefun-5" => "https://rdcanais.com/telecinefun",
 
      
           "Telecinetouch" => "https://redecanais.cafe/player3/ch.php?canal=telecinetouch",
      "Telecinetouch-2" => "https://nossoplayeronlinehd.site/tv/telecinetouch",
      "Telecinetouch-3" => "https://www2.embedtv.best/Telecine_Touch",
      "Telecinetouch-4" => "https://www2.embedtv.best/telecine-touch",
-      "Telecinetouch-5" => "https://rdcanais.top/telecinetouch",
+      "Telecinetouch-5" => "https://rdcanais.com/telecinetouch",
 
      
                "TelecineAction" => "https://redecanais.cafe/player3/ch.php?canal=telecineaction",
      "TelecineAction-2" => "https://nossoplayeronlinehd.site/tv/telecineaction",
      "TelecineAction-3" => "https://www2.embedtv.best/Telecine_Action",
           "TelecineAction-4" => "https://embedflix.gold/tv/telecine-action-hd",
-        "TelecineAction-5" => "https://rdcanais.top/embed/?id=telecineaction",
+        "TelecineAction-5" => "https://rdcanais.com/embed/?id=telecineaction",
      
  "primeboxb" => "https://redecanais.cafe/player3/ch.php?canal=primeboxbrazil",
 "primeboxb-2" => "https://redecanais.cafe/player3/ch.php?canal=primeboxbrazil",
-"primeboxb-3" => "https://rdcanais.top/embed/?id=primeboxbrazil",
+"primeboxb-3" => "https://rdcanais.com/embed/?id=primeboxbrazil",
      
                     "TelecinePremium" => "https://redecanais.cafe/player3/ch.php?canal=telecinepremium",
      "TelecinePremium-2" => "https://nossoplayeronlinehd.site/tv/telecinepremium",
      "TelecinePremium-3" => "https://www2.embedtv.best/Telecine_Premium",
      "TelecinePremium-4" => "https://www2.embedtv.best/Telecine_Premium",
-     "TelecinePremium-5" => "https://rdcanais.top/telecinepremium",
+     "TelecinePremium-5" => "https://rdcanais.com/telecinepremium",
 
      
      "tcm" => "https://www2.embedtv.best/tcm",
@@ -1238,40 +1238,40 @@ return array(
 "Cinemax" => "https://redecanais.cafe/player3/ch.php?canal=cinemax",
 "Cinemax-2" => "https://www2.embedtv.best/cinemax",
 "Cinemax-3" => "https://www2.embedtv.best/cinemax",
-"Cinemax-4" => "https://rdcanais.top/cinemax",
+"Cinemax-4" => "https://rdcanais.com/cinemax",
 
 
 "Space" => "https://redecanais.cafe/player3/ch.php?canal=space",
 "Space-2" => "https://www2.embedtv.best/space",
 "Space-3" => "https://nossoplayeronlinehd.site/tv/space",
-"Space-4" => "https://rdcanais.top/space",
+"Space-4" => "https://rdcanais.com/space",
 
 "SySy" => "https://redecanais.cafe/player3/ch.php?canal=syfy",
 "SySy-2" => "https://playertv.net/e/?v=syfy",
 
 "amc" => "https://redecanais.cafe/player3/ch.php?canal=amc",
-"amc-2" => "https://rdcanais.top/amc",
+"amc-2" => "https://rdcanais.com/amc",
 "amc-3" => "https://playertv.net/e/?v=amc",
-"amc-4" => "https://rdcanais.top/amc",
+"amc-4" => "https://rdcanais.com/amc",
 
 "WarnerTV" => "https://redecanais.cafe/player3/ch.php?canal=warner",
 "WarnerTV-2" => "https://www2.embedtv.best/warnerchannel",
 "WarnerTV-3" => "https://www2.embedtv.best/warner_hd",
-"WarnerTV-4" => "https://rdcanais.top/warnertv",
+"WarnerTV-4" => "https://rdcanais.com/warnertv",
 
 "ParamountChannel" => "https://redecanais.cafe/player3/ch.php?canal=paramount",
 "ParamountChannel-2" => "https://embedflix.gold/tv/player.php?id=paramount-network",
-"ParamountChannel-3" => "https://rdcanais.top/embed/?id=paramountnetwork",
+"ParamountChannel-3" => "https://rdcanais.com/embed/?id=paramountnetwork",
 
 "StudioUniversal" => "https://redecanais.cafe/player3/ch.php?canal=studiouniversal",
 "StudioUniversal-2" => "https://www2.embedtv.best/studiouniversal",
 "StudioUniversal-3" => "https://playertv.net/e/?v=studio",
-"StudioUniversal-4" => "https://rdcanais.top/studiouniversal",
+"StudioUniversal-4" => "https://rdcanais.com/studiouniversal",
  
  "hbosign" => "https://redecanais.cafe/player3/ch.php?canal=hbosignature",
- "hbosign-2" => "https://rdcanais.top/hbosignature",
+ "hbosign-2" => "https://rdcanais.com/hbosignature",
  "hbosign-3" => "https://embedtv.org/hbosignature/",
- "hbosign-4" => "https://rdcanais.top/hbosignature",
+ "hbosign-4" => "https://rdcanais.com/hbosignature",
 
  
  "hbopop" => "https://redecanais.cafe/player3/ch.php?canal=hbopop",
@@ -1287,14 +1287,14 @@ return array(
  "HboXtreme-2" => "https://nossoplayeronlinehd.site/tv/hboxtreme",
  "HboXtreme-3" => "https://embedflix.gold/tv/hbo-xtreme",
  "HboXtreme-4" => "https://www2.embedtv.best/Hbo_Xtreme",
- "HboXtreme-5" => "https://rdcanais.top/hboxtreme",
+ "HboXtreme-5" => "https://rdcanais.com/hboxtreme",
  
  
  "HboFamily" => "https://redecanais.cafe/player3/ch.php?canal=hbofamily",
  "HboFamily-2" => "https://nossoplayeronlinehd.site/tv/hbofamily",
  "HboFamily-3" => "https://www2.embedtv.best/HBO_family",
  "HboFamily-4" => "https://embedflix.gold/tv/player.php?id=hbo-family",
- "HboFamily-5" => "https://rdcanais.top/hbofamily",
+ "HboFamily-5" => "https://rdcanais.com/hbofamily",
 
  
  
@@ -1302,40 +1302,40 @@ return array(
   "MegaPix-2" => "https://nossoplayeronlinehd.site/tv/megapix",
   "MegaPix-3" => "https://www2.embedtv.best/megapix_hd",
   "MegaPix-4" => "https://embedflix.gold/tv/player.php?id=megapix",
-  "MegaPix-5" => "https://rdcanais.top/megapix",
+  "MegaPix-5" => "https://rdcanais.com/megapix",
     
       "gnt" => "https://redecanais.cafe/player3/ch.php?canal=gnt",
   "gnt-2" => "https://www2.embedtv.best/gnt", 
    "gnt-3" => "https://embedtv.org/gnt/",
-   "gnt-4" => "https://rdcanais.top/gnt",
+   "gnt-4" => "https://rdcanais.com/gnt",
 
   "tlc" => "https://redecanais.cafe/player3/ch.php?canal=tlc",
   "tlc-2" => "https://nossoplayeronlinehd.site/tv/tlc",   
    "tlc-3" => "https://www2.embedtv.best/tlc_hd",  
-   "tlc-4" => "https://rdcanais.top/tlc",
+   "tlc-4" => "https://rdcanais.com/tlc",
    
      "Modoviagem" => "https://redecanais.cafe/player3/ch.php?canal=modoviagem",
-     "Modoviagem-2" => "https://rdcanais.top/modoviagem",
+     "Modoviagem-2" => "https://rdcanais.com/modoviagem",
      "Modoviagem-3" => "https://playertv.net/e/?v=modoViagem",
-     "Modoviagem-4" => "https://rdcanais.top/modoviagem",
+     "Modoviagem-4" => "https://rdcanais.com/modoviagem",
 
 
 "e" => "https://redecanais.cafe/player3/ch.php?canal=canale",
   "e-2" => "https://www2.embedtv.best/e",   
-    "e-3" => "https://rdcanais.top/embed/?id=e",
-   "e-4" => "https://rdcanais.top/embed/?id=e",
+    "e-3" => "https://rdcanais.com/embed/?id=e",
+   "e-4" => "https://rdcanais.com/embed/?id=e",
   
   "bis" => "https://redecanais.cafe/player3/ch.php?canal=bis",
   "bis-2" => "https://playertv.net/e/?v=bis",   
-  "bis-3" => "https://rdcanais.top/bis",
-  "bis-4" => "https://rdcanais.top/bis",
+  "bis-3" => "https://rdcanais.com/bis",
+  "bis-4" => "https://rdcanais.com/bis",
 
   "RedBullTV" => "https://megacanaisonline.space/tv2.php?canal=https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
   "RedBullTV-2" => "https://megacanaisonline.space/tv2.php?canal=https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8", 
   
-  "ParamountNetwork" => "https://rdcanais.top/embed/?id=paramountnetwork",
- "ParamountNetwork-2" => "https://rdcanais.top/embed/?id=paramountnetwork",
- "ParamountNetwork-3" => "https://rdcanais.top/embed/?id=paramountnetwork",
+  "ParamountNetwork" => "https://rdcanais.com/embed/?id=paramountnetwork",
+ "ParamountNetwork-2" => "https://rdcanais.com/embed/?id=paramountnetwork",
+ "ParamountNetwork-3" => "https://rdcanais.com/embed/?id=paramountnetwork",
  
  
     
@@ -1363,12 +1363,12 @@ return array(
    
   "CanalBrasil-3" => "https://redecanais.cafe/player3/ch.php?canal=canalbrasil",
   
-  "CanalBrasil-4" => "https://rdcanais.top/embed/?id=canalbrasil",
+  "CanalBrasil-4" => "https://rdcanais.com/embed/?id=canalbrasil",
 
   "tvcultura" => "https://megacanaisonline.space/tv2.php?canal=https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
   "tvcultura-2" => "https://www2.embedtv.best/tv-cultura",
     "tvcultura-3" => "https://www2.embedtv.best/cultura",
-      "tvcultura-4" => "https://rdcanais.top/embed/?id=tvcultura",
+      "tvcultura-4" => "https://rdcanais.com/embed/?id=tvcultura",
       
           "universal" => "https://redecanais.cafe/player3/ch.php?canal=universal",
   "universal-2" => "https://www2.embedtv.best/universaltv",
@@ -1378,19 +1378,19 @@ return array(
     
     "Cinecanal" => "https://redecanais.cafe/player3/ch.php?canal=cinecanal",
   "Cinecanal-2" => "https://playertv.net/e/?v=cineCanal",
-    "Cinecanal-3" => "https://rdcanais.top/embed/?id=cinecanal",
-"Cinecanal-4" => "https://rdcanais.top/embed/?id=cinecanal",
+    "Cinecanal-3" => "https://rdcanais.com/embed/?id=cinecanal",
+"Cinecanal-4" => "https://rdcanais.com/embed/?id=cinecanal",
 
     
         "starchannel" => "https://redecanais.cafe/player3/ch.php?canal=starchannel",
   "starchannel-2" => "https://redecanais.cafe/player3/ch.php?canal=starchannel",
     "starchannel-3" => "https://redecanais.cafe/player3/ch.php?canal=starchannel",
- "starchannel-4" => "https://rdcanais.top/embed/?id=starchannel",
+ "starchannel-4" => "https://rdcanais.com/embed/?id=starchannel",
     
     "AdultSwim" => "https://redecanais.cafe/player3/ch.php?canal=adultswim",
   "AdultSwim-2" => "https://www2.embedtv.best/adultswim",
     "AdultSwim-3" => "https://www2.embedtv.best/adultswim",
-        "AdultSwim-4" => "https://rdcanais.top/embed/?id=adultswim",
+        "AdultSwim-4" => "https://rdcanais.com/embed/?id=adultswim",
   
  "Runtime" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153",
   "Runtime-2" => "https://megacanaisonline.space/tv2.php?canal=https://stream.ads.ottera.tv/playlist.m3u8?network_id=2552",
@@ -1466,10 +1466,10 @@ return array(
 
 
         
-            "Futura" => "https://rdcanais.top/embed/?id=futura",
+            "Futura" => "https://rdcanais.com/embed/?id=futura",
   "Futura-2" => "https://playertv.net/e/?v=futura",
-    "Futura-3" => "https://rdcanais.top/embed/?id=futura",
-        "Futura-4" => "https://rdcanais.top/embed/?id=futura",
+    "Futura-3" => "https://rdcanais.com/embed/?id=futura",
+        "Futura-4" => "https://rdcanais.com/embed/?id=futura",
   
 "Halloseries-1" => "https://megacanaisonline.space/tv2.php?canal=https://origin-05.nxplay.com.br/HALLOSERIES/mono.m3u8",
    
@@ -1576,13 +1576,13 @@ return array(
 
 
 
-"Nsports-1" => "https://rdcanais.top/nsports",
+"Nsports-1" => "https://rdcanais.com/nsports",
    
-    "Nsports-2" => "https://rdcanais.top/nsports",
+    "Nsports-2" => "https://rdcanais.com/nsports",
     
-  "Nsports-3" => "https://rdcanais.top/nsports",
+  "Nsports-3" => "https://rdcanais.com/nsports",
 
- "Nsports-4" => "https://rdcanais.top/nsports",
+ "Nsports-4" => "https://rdcanais.com/nsports",
 
 
 
