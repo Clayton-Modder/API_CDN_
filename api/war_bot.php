@@ -9,7 +9,7 @@
  * Rode com: php war_bot.php (webhook) ou polling abaixo.
  */
 
-define('BOT_TOKEN', 'SEU_TOKEN_AQUI'); // 🔑 Substitua pelo token do @BotFather
+define('BOT_TOKEN', '8407063580:AAEQpwhl-CmxuzNSv-fgYzM7eVK7efMDUww'); // 🔑 Substitua pelo token do @BotFather
 define('API_URL', 'https://api.telegram.org/bot' . BOT_TOKEN . '/');
 define('DB_FILE', __DIR__ . '/war_data.json'); // Banco de dados simples em JSON
 define('WAR_COOLDOWN', 20 * 60); // 20 minutos em segundos
